@@ -1,15 +1,15 @@
 <?php
 
 class AccountsController extends Controller
-{	
+{
 	public function actionRegister()
 	{
 		$model = new User(User::SIGNUP);
 		$form = new CForm('application.modules.society.forms.register', $model);
-		$form->model = $model; 
-		if($form->submitted('register') && $form->validate()) {
+		$form->model = $model;
+		if ($form->submitted('register') && $form->validate()) {
 			$user = $form->model;
-			if($user->save(false)) {
+			if ($user->save()) {
 //                $message = new YiiMailMessage;
 //                $message->view = 'registrationIntro';
 //                $message->setSubject('[Кабинет] Подтверждение регистрации');
@@ -20,70 +20,72 @@ class AccountsController extends Controller
 
 				$this->redirect(array('accounts/welcome'));
 			}
-		} else
-			$this->render('register', array('form'=>$form));
+		} else {
+			$this->render('register', array('form' => $form));
+		}
 	}
-	
+
 	public function actionWelcome()
 	{
 		$this->render('welcome');
 	}
-	
+
 	public function actionLogin()
 	{
-		if(!Yii::app()->user->isGuest)
+		if (!Yii::app()->user->isGuest) {
 			$this->redirect(array('accounts/my'));
-		
+		}
+
 		$model = new User(User::LOGIN);
 		$form = new CForm('application.modules.society.forms.login', $model);
 		$form->model = $model;
-		if($form->submitted('login') && $form->validate()) {
-			$model = $form->model; 
-			
-			if($model->validate()){
-				if($model->login()) {
+		if ($form->submitted('login') && $form->validate()) {
+			$model = $form->model;
+
+			if ($model->validate()) {
+				if ($model->login()) {
 					$this->redirect(array('my'));
 				}
 			}
 		}
-		
-		$this->render('login', array('form'=>$form));
+
+		$this->render('login', array('form' => $form));
 	}
-	
+
 	public function actionLogout()
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
-	
+
 	public function actionMy()
-	{	
+	{
 		$user = User::model()->findByPk(Yii::app()->user->id);
-		if(isset($_POST['User'])) {
+		if (isset($_POST['User'])) {
 			$user->scenario = User::PROFILE;
 			$user->attributes = $_POST['User'];
-			if($user->validate()) {
+			if ($user->validate()) {
 				$user->save(false);
 				$this->redirect(array('/society/accounts/my'));
-			} 
-		} 
+			}
+		}
 		$this->layout = '//layouts/profile';
-		$this->render('my', array('model'=>$user));
+		$this->render('my', array('model' => $user));
 	}
-	
+
 	public function actionUpload()
 	{
 		Yii::import("ext.EAjaxUpload.qqFileUploader");
 		$folder = dirname(Yii::getPathOfAlias('application')).'/uploads/';
-		$allowedExtensions = array("jpg");
+		$allowedExtensions = array("jpg", "jpeg", "gif", "png");
 		$sizeLimit = 10 * 1024 * 1024;
 		$uploader = new qqFileUploader($allowedExtensions, $sizeLimit);
 		$result = $uploader->handleUpload($folder, true);
-		
+
 		$result = htmlspecialchars(json_encode($result), ENT_NOQUOTES);
 		echo $result;
 	}
-	
+
 	public function actionChangePhoto()
 	{
 		$filename = $_POST['filename'];
@@ -91,7 +93,7 @@ class AccountsController extends Controller
 		$user->photo = $filename;
 		$user->save(false);
 	}
-	
+
 	public function actionRemovePhoto()
 	{
 		$user = User::model()->findByPk(Yii::app()->user->id);
@@ -99,7 +101,7 @@ class AccountsController extends Controller
 		$user->save(false);
 		$this->redirect(array('my'));
 	}
-	
+
 	public function actionChangePassword()
 	{
 		$user = User::model()->findByPk(Yii::app()->user->id);
