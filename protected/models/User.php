@@ -46,7 +46,7 @@ class User extends CActiveRecord
 				'message' => 'Заполните поле {attribute}'
 			),
 			array(
-				'first_name, last_name, second_name, zip, address, city, email, phone, website',
+				'first_name, last_name, second_name, email, phone, website',
 				'required',
 				'on' => self::PROFILE,
 				'message' => 'Заполните поле {attribute}'
@@ -99,9 +99,6 @@ class User extends CActiveRecord
 			'password' => 'Пароль',
 			'passwordRepeat' => 'Повторите пароль',
 			'photo' => 'Фотография',
-			'address' => 'улица, дом, квартира',
-			'city' => 'город',
-			'zip' => 'почтовый индекс',
 		);
 	}
 
