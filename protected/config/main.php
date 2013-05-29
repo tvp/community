@@ -12,7 +12,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Community Online',
 		
-	'theme'=>'bootstrap',
+	'theme'=>'community',
 	
 	'sourceLanguage' => 'en',
 	'language' => 'ru',
