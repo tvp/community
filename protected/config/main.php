@@ -39,6 +39,19 @@ return array(
 				'bootstrap.gii',
 			),
 		),
+        'yiicCommandMap' => array(
+            'email'=>array(
+                'class'=>'ext.mailer.MailerCommand',
+                'from'=>'aleksey@razbakov.com',
+            ),
+            'migrate'=>array(
+                'class'=>'system.cli.commands.MigrateCommand',
+                'migrationPath'=>'application.migrations',
+                'migrationTable'=>'migrations',
+                'connectionID'=>'db',
+                'templateFile'=>'application.migrations.template',
+            ),
+        ),
 	),
 
 	// application components

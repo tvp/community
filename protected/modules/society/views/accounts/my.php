@@ -10,7 +10,45 @@ $this->breadcrumbs = array(
 		<?php echo CHtml::beginForm(); ?>
 		<?php echo CHtml::errorSummary($model, null, null, array('class' => 'alert')); ?>
 
-		<div class="span3">
+		<div class="span5">
+            <dt>Фотография</dt>
+            <dd>
+                <div class="row">
+                    <?php $this->widget(
+                    'bootstrap.widgets.TbButtonGroup',
+                    array(
+                        'buttons' => array(
+                            array(
+                                'label' => 'Изменить фотографию',
+                                'icon' => 'picture',
+                                'htmlOptions' => array(
+                                    'data-toggle' => 'modal',
+                                    'data-target' => '#uploadPhoto',
+                                ),
+                            ),
+                            array(
+                                'items' => array(
+                                    array(
+                                        'label' => 'Удалить фотографию',
+                                        'url' => array('/society/accounts/removePhoto')
+                                    ),
+                                )
+                            ),
+                        ),
+                    )
+                ); ?>
+                    <br><br>
+                </div>
+
+                <div class="row profile-photo">
+                    <?php if ($model->photo): ?>
+                    <img id="photo" src="<?php echo $model->photo ?>">
+                    <?php else: ?>
+                    <img id="photo" src="/images/nophoto.png">
+                    <?php endif;?>
+                </div>
+            </dd>
+
             <dl class="dl-horizontal">
                 <dt>Общая информация</dt>
                 <dd>
@@ -48,44 +86,6 @@ $this->breadcrumbs = array(
                     </div>
                 </dd>
 
-                <dt>Фотография</dt>
-                <dd>
-                    <div class="row">
-                        <?php $this->widget(
-                        'bootstrap.widgets.TbButtonGroup',
-                        array(
-                            'buttons' => array(
-                                array(
-                                    'label' => 'Изменить фотографию',
-                                    'icon' => 'picture',
-                                    'htmlOptions' => array(
-                                        'data-toggle' => 'modal',
-                                        'data-target' => '#uploadPhoto',
-                                    ),
-                                ),
-                                array(
-                                    'items' => array(
-                                        array(
-                                            'label' => 'Удалить фотографию',
-                                            'url' => array('/society/accounts/removePhoto')
-                                        ),
-                                    )
-                                ),
-                            ),
-                        )
-                    ); ?>
-                        <br><br>
-                    </div>
-
-                    <div class="row profile-photo">
-                        <?php if ($model->photo): ?>
-                        <img id="photo" src="<?php echo $model->photo ?>">
-                        <?php else: ?>
-                        <img id="photo" src="/images/nophoto.png">
-                        <?php endif;?>
-                    </div>
-                </dd>
-
                 <dt>Безопасность</dt>
                 <dd>
                     <div class="row">
@@ -116,7 +116,56 @@ $this->breadcrumbs = array(
                     </div>
                 </dd>
             </dl>
-		</div>
+        </div>
+        <div class="span5"
+            <dl class="dl-horizontal">
+                <dt>Языки</dt>
+                <dd>
+                    выбор из списка языков: русский, английский, немецкий и т.д.
+                </dd>
+
+                <dt>Навыки</dt>
+                <dd>
+                    выбор из списка навыков: дизайн, программирование, верстка, физика, химия и т.д.
+                </dd>
+
+                <dt>География</dt>
+                <dd>
+                    <div class="row">
+                        <?php echo CHtml::activeLabel($model, 'country'); ?>
+                        <?php echo CHtml::activeTextField($model, 'country'); ?>
+                    </div>
+                    <div class="row">
+                        <?php echo CHtml::activeLabel($model, 'city'); ?>
+                        <?php echo CHtml::activeTextField($model, 'city'); ?>
+                    </div>
+                </dd>
+
+                <dt>Социальные сети</dt>
+                <dd>
+                    <div class="row">
+                        <?php echo CHtml::activeLabel($model, 'vkontakte'); ?>
+                        <?php echo CHtml::activeTextField($model, 'vkontakte'); ?>
+                    </div>
+                    <div class="row">
+                        <?php echo CHtml::activeLabel($model, 'twitter'); ?>
+                        <?php echo CHtml::activeTextField($model, 'twitter'); ?>
+                    </div>
+                    <div class="row">
+                        <?php echo CHtml::activeLabel($model, 'facebook'); ?>
+                        <?php echo CHtml::activeTextField($model, 'facebook'); ?>
+                    </div>
+                    <div class="row">
+                        <?php echo CHtml::activeLabel($model, 'google'); ?>
+                        <?php echo CHtml::activeTextField($model, 'google'); ?>
+                    </div>
+                    <div class="row">
+                        <?php echo CHtml::activeLabel($model, 'instagram'); ?>
+                        <?php echo CHtml::activeTextField($model, 'instagram'); ?>
+                    </div>
+                </dd>
+            </dl>
+        </div>
 
 		<br class="clear">
 
