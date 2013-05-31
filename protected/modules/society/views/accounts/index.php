@@ -7,7 +7,7 @@ $this->breadcrumbs=array(
 <h1>Сообщество</h1>
 
 <?php foreach ($model as $user): ?>
-    <div class="span-1">
+    <div class="span-1" style="height: 300px; overflow: hidden;">
         <div style="height: 200px;overflow: hidden">
             <img src="<?php echo $user['photo'] ?>" width="200">
         </div>
