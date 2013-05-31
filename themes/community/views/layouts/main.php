@@ -22,6 +22,7 @@
                 array('label'=>'Вход', 'url'=>array('/society/accounts/login'), 'visible'=>Yii::app()->user->isGuest),
                 array('label'=>'Регистрация', 'url'=>array('/society/accounts/register'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Профиль', 'url'=>array('/society/accounts/my'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Сообщество', 'url'=>array('/society/accounts/index'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Выход ('.Yii::app()->user->name.')', 'url'=>array('/society/accounts/logout'), 'visible'=>!Yii::app()->user->isGuest)
             ),
         ),

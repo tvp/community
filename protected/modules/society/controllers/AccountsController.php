@@ -58,6 +58,13 @@ class AccountsController extends Controller
 		$this->redirect(Yii::app()->homeUrl);
 	}
 
+    public function actionIndex()
+    {
+        $user = User::model()->findAll();
+        $this->layout = '//layouts/profile';
+        $this->render('index', array('model' => $user));
+    }
+
 	public function actionMy()
 	{
 		$user = User::model()->findByPk(Yii::app()->user->id);

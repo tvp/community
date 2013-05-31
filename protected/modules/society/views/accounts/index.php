@@ -1,14 +1,16 @@
 <?php
 $this->breadcrumbs=array(
-	$this->module->id,
+	'Сообщество'
 );
 ?>
-<h1><?php echo $this->uniqueId . '/' . $this->action->id; ?></h1>
 
-<p>
-This is the view content for action "<?php echo $this->action->id; ?>".
-The action belongs to the controller "<?php echo get_class($this); ?>" in the "<?php echo $this->module->id; ?>" module.
-</p>
-<p>
-You may customize this page by editing <tt><?php echo __FILE__; ?></tt>
-</p>
+<h1>Сообщество</h1>
+
+<?php foreach ($model as $user): ?>
+    <div class="span-1">
+        <img src="<?php echo $user['photo'] ?>" width="200">
+        <h4><?php echo $user['first_name'] ?> <?php echo $user['last_name'] ?></h4>
+        <p><?php echo $user['email'] ?></p>
+        <p><?php echo $user['phone'] ?></p>
+    </div>
+<?php endforeach; ?>
