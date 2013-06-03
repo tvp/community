@@ -16,23 +16,23 @@ $this->pageTitle=Yii::app()->name;
     </div>
 </section>
 <aside class="span4">
-    <h3>The Venus Project Activism</h3>
-    <p>Do you want to  help us?</p>
-    <p><a class="btn btn-large btn-primary" href="<?php echo $this->createUrl('/society/accounts/register') ?>">Join Us</a></p>
+    <h3>Активизм Проекта Венера</h3>
+    <p>Хочешь помочь Проекту Венера?</p>
+    <p><a class="btn btn-large btn-primary" href="<?php echo $this->createUrl('/society/accounts/register') ?>">Стать участником</a></p>
 
-    <h3>For members</h3>
-    <p>Do you already have an account?</p>
-    <p><a class="btn" href="<?php echo $this->createUrl('/society/accounts/login') ?>">Login</a></p>
+    <h3>Участникам</h3>
+    <p>Уже есть аккаунт?</p>
+    <p><a class="btn" href="<?php echo $this->createUrl('/society/accounts/login') ?>">Вход</a></p>
 
-    <h3>Support</h3>
-    <p>Do you have questions or proposals?</p>
-    <p>Contact author <a href="mailto:aleksey@razbakov.com">aleksey@razbakov.com</a></p>
+    <h3>Поддержка</h3>
+    <p>Возникли вопросы или предложения?</p>
+    <p>Связаться с автором <a href="mailto:aleksey@razbakov.com">aleksey@razbakov.com</a></p>
 
 
 </aside>
 
 <section class="span8">
-    <h3>Social Networks</h3>
+    <h3>Мы в сети</h3>
 
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?95"></script>
 

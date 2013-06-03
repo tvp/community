@@ -1,6 +1,6 @@
 <?php
 return array(
-	'title' => 'Заполните поля, пожалуйста',
+	'title' => t('Fill-in the fields, please'),
 	'elements' => array(
 		'first_name' => array(
 			'type' => 'text',
@@ -30,7 +30,7 @@ return array(
 	'buttons' => array(
 		'register' => array(
 			'type' => 'submit',
-			'label' => 'Принять участие',
+			'label' => t('Join'),
 			'class' => 'btn btn-primary btn-large'
 		),
 	),

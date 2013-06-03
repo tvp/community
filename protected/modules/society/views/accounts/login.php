@@ -3,13 +3,13 @@
 /* @var $model LoginForm */
 /* @var $form CActiveForm  */
 
-$this->pageTitle = Yii::app()->name . ' - Вход';
+$this->pageTitle = Yii::app()->name . ' - '. t('Login');
 $this->breadcrumbs = array(
-	'Вход',
+    t('Login'),
 );
 ?>
 
-<h1>Вход</h1>
+<h1><?php echo t('Login')?></h1>
 
 <div class="span4"></div>
 <div class="form well span4">

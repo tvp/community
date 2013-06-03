@@ -3208,3 +3208,149 @@ in /private/var/www/community/index.php (13)
 2013/05/31 14:57:43 [warning] [application] Не удалось присвоить небезопасный атрибут "instagram" класса "User".
 in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (72)
 in /private/var/www/community/index.php (13)
+2013/06/03 12:32:11 [warning] [application] Не удалось присвоить небезопасный атрибут "country" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:32:11 [warning] [application] Не удалось присвоить небезопасный атрибут "city" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:32:11 [warning] [application] Не удалось присвоить небезопасный атрибут "vkontakte" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:32:11 [warning] [application] Не удалось присвоить небезопасный атрибут "twitter" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:32:11 [warning] [application] Не удалось присвоить небезопасный атрибут "facebook" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:32:11 [warning] [application] Не удалось присвоить небезопасный атрибут "google" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:32:11 [warning] [application] Не удалось присвоить небезопасный атрибут "instagram" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:39:47 [error] [php] Missing argument 2 for YiiBase::t(), called in /private/var/www/community/themes/community/views/layouts/main.php on line 22 and defined (/private/var/www/community/framework/YiiBase.php:571)
+Stack trace:
+#0 /private/var/www/community/framework/web/CBaseController.php(95): AccountsController->renderInternal()
+#1 /private/var/www/community/framework/web/widgets/CContentDecorator.php(76): AccountsController->renderFile()
+#2 /private/var/www/community/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /private/var/www/community/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /private/var/www/community/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /private/var/www/community/framework/web/CBaseController.php(300): AccountsController->endWidget()
+#6 /private/var/www/community/themes/community/views/layouts/profile.php(10): AccountsController->endContent()
+#7 /private/var/www/community/framework/web/CBaseController.php(126): require()
+#8 /private/var/www/community/framework/web/CBaseController.php(95): AccountsController->renderInternal()
+#9 /private/var/www/community/framework/web/CController.php(784): AccountsController->renderFile()
+#10 /private/var/www/community/protected/modules/society/controllers/AccountsController.php(80): AccountsController->render()
+#11 /private/var/www/community/framework/web/actions/CInlineAction.php(49): AccountsController->actionMy()
+#12 /private/var/www/community/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /private/var/www/community/framework/web/CController.php(286): AccountsController->runAction()
+#14 /private/var/www/community/framework/web/CController.php(265): AccountsController->runActionWithFilters()
+#15 /private/var/www/community/framework/web/CWebApplication.php(282): AccountsController->run()
+#16 /private/var/www/community/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /private/var/www/community/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /private/var/www/community/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/society/accounts/my/lang/ru
+in /private/var/www/community/themes/community/views/layouts/main.php (22)
+in /private/var/www/community/themes/community/views/layouts/profile.php (10)
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (80)
+2013/06/03 12:47:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "lang/en".' in /private/var/www/community/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/www/community/framework/web/CWebApplication.php(141): CWebApplication->runController('lang/en')
+#1 /private/var/www/community/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /private/var/www/community/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/lang/en/
+---
+2013/06/03 12:47:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "lang:en".' in /private/var/www/community/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/www/community/framework/web/CWebApplication.php(141): CWebApplication->runController('lang:en')
+#1 /private/var/www/community/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /private/var/www/community/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/lang:en/
+---
+2013/06/03 12:50:37 [warning] [application] Не удалось присвоить небезопасный атрибут "country" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:37 [warning] [application] Не удалось присвоить небезопасный атрибут "city" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:37 [warning] [application] Не удалось присвоить небезопасный атрибут "vkontakte" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:37 [warning] [application] Не удалось присвоить небезопасный атрибут "twitter" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:37 [warning] [application] Не удалось присвоить небезопасный атрибут "facebook" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:37 [warning] [application] Не удалось присвоить небезопасный атрибут "google" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:37 [warning] [application] Не удалось присвоить небезопасный атрибут "instagram" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:41 [warning] [application] Не удалось присвоить небезопасный атрибут "country" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:41 [warning] [application] Не удалось присвоить небезопасный атрибут "city" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:41 [warning] [application] Не удалось присвоить небезопасный атрибут "vkontakte" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:41 [warning] [application] Не удалось присвоить небезопасный атрибут "twitter" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:41 [warning] [application] Не удалось присвоить небезопасный атрибут "facebook" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:41 [warning] [application] Не удалось присвоить небезопасный атрибут "google" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:41 [warning] [application] Не удалось присвоить небезопасный атрибут "instagram" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:43 [warning] [application] Не удалось присвоить небезопасный атрибут "country" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:43 [warning] [application] Не удалось присвоить небезопасный атрибут "city" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:43 [warning] [application] Не удалось присвоить небезопасный атрибут "vkontakte" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:43 [warning] [application] Не удалось присвоить небезопасный атрибут "twitter" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:43 [warning] [application] Не удалось присвоить небезопасный атрибут "facebook" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:43 [warning] [application] Не удалось присвоить небезопасный атрибут "google" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:43 [warning] [application] Не удалось присвоить небезопасный атрибут "instagram" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:44 [warning] [application] Не удалось присвоить небезопасный атрибут "country" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:44 [warning] [application] Не удалось присвоить небезопасный атрибут "city" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:44 [warning] [application] Не удалось присвоить небезопасный атрибут "vkontakte" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:44 [warning] [application] Не удалось присвоить небезопасный атрибут "twitter" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:44 [warning] [application] Не удалось присвоить небезопасный атрибут "facebook" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:44 [warning] [application] Не удалось присвоить небезопасный атрибут "google" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/03 12:50:44 [warning] [application] Не удалось присвоить небезопасный атрибут "instagram" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)

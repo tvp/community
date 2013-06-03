@@ -1,9 +1,9 @@
 <?php
 $this->breadcrumbs=array(
-	'Регистрация',
+    t('Registration'),
 );
 ?>
-<h1>Регистрация</h1>
+<h1><?php echo t('Registration') ?></h1>
 
 <div class="span4"></div>
 <div class="form well span4">

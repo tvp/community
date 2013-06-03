@@ -90,15 +90,15 @@ class User extends CActiveRecord
 	{
 		return array(
 			'id' => 'Id',
-			'first_name' => 'Имя',
-			'second_name' => 'Отчество',
-			'last_name' => 'Фамилия',
-			'email' => 'Email',
-			'phone' => 'Телефон',
-			'website' => 'Сайт',
-			'password' => 'Пароль',
-			'passwordRepeat' => 'Повторите пароль',
-			'photo' => 'Фотография',
+			'first_name' => t('First Name'),
+			'second_name' => t('Second Name'),
+			'last_name' => t('Last Name'),
+			'email' => t('Email'),
+			'phone' => t('Phone'),
+			'website' => t('Web Site'),
+			'password' => t('Password'),
+			'passwordRepeat' => t('Repeat Password'),
+			'photo' => t('Photo'),
 		);
 	}
 

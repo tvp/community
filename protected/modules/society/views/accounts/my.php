@@ -11,46 +11,8 @@ $this->breadcrumbs = array(
 		<?php echo CHtml::errorSummary($model, null, null, array('class' => 'alert')); ?>
 
 		<div class="span5">
-            <dt>Фотография</dt>
-            <dd>
-                <div class="row">
-                    <?php $this->widget(
-                    'bootstrap.widgets.TbButtonGroup',
-                    array(
-                        'buttons' => array(
-                            array(
-                                'label' => 'Изменить фотографию',
-                                'icon' => 'picture',
-                                'htmlOptions' => array(
-                                    'data-toggle' => 'modal',
-                                    'data-target' => '#uploadPhoto',
-                                ),
-                            ),
-                            array(
-                                'items' => array(
-                                    array(
-                                        'label' => 'Удалить фотографию',
-                                        'url' => array('/society/accounts/removePhoto')
-                                    ),
-                                )
-                            ),
-                        ),
-                    )
-                ); ?>
-                    <br><br>
-                </div>
-
-                <div class="row profile-photo">
-                    <?php if ($model->photo): ?>
-                    <img id="photo" src="<?php echo $model->photo ?>">
-                    <?php else: ?>
-                    <img id="photo" src="/images/nophoto.png">
-                    <?php endif;?>
-                </div>
-            </dd>
-
             <dl class="dl-horizontal">
-                <dt>Общая информация</dt>
+                <dt><?php echo t('General Information') ?></dt>
                 <dd>
                     <div class="row">
                         <?php echo CHtml::activeLabel($model, 'last_name'); ?>
@@ -68,31 +30,51 @@ $this->breadcrumbs = array(
                     </div>
                 </dd>
 
-                <dt>Контакты</dt>
+                <dt><?php echo t('Photo') ?></dt>
                 <dd>
                     <div class="row">
-                        <?php echo CHtml::activeLabel($model, 'email'); ?>
-                        <?php echo CHtml::activeTextField($model, 'email'); ?>
+                        <?php $this->widget(
+                        'bootstrap.widgets.TbButtonGroup',
+                        array(
+                            'buttons' => array(
+                                array(
+                                    'label' => t('Change photo'),
+                                    'icon' => 'picture',
+                                    'htmlOptions' => array(
+                                        'data-toggle' => 'modal',
+                                        'data-target' => '#uploadPhoto',
+                                    ),
+                                ),
+                                array(
+                                    'items' => array(
+                                        array(
+                                            'label' => t('Remove photo'),
+                                            'url' => array('/society/accounts/removePhoto')
+                                        ),
+                                    )
+                                ),
+                            ),
+                        )
+                    ); ?>
+                        <br><br>
                     </div>
 
-                    <div class="row">
-                        <?php echo CHtml::activeLabel($model, 'phone'); ?>
-                        <?php echo CHtml::activeTextField($model, 'phone'); ?>
-                    </div>
-
-                    <div class="row">
-                        <?php echo CHtml::activeLabel($model, 'website'); ?>
-                        <?php echo CHtml::activeTextField($model, 'website'); ?>
+                    <div class="row profile-photo">
+                        <?php if ($model->photo): ?>
+                        <img id="photo" src="<?php echo $model->photo ?>">
+                        <?php else: ?>
+                        <img id="photo" src="/images/nophoto.png">
+                        <?php endif;?>
                     </div>
                 </dd>
 
-                <dt>Безопасность</dt>
+                <dt><?php echo t('Security Settings') ?></dt>
                 <dd>
                     <div class="row">
                         <?php $this->widget(
                         'bootstrap.widgets.TbButton',
                         array(
-                            'label' => 'Изменить пароль',
+                            'label' => t('Change Password'),
                             'icon' => 'lock',
                             'htmlOptions' => array(
                                 'data-toggle' => 'modal',
@@ -119,29 +101,25 @@ $this->breadcrumbs = array(
         </div>
         <div class="span5"
             <dl class="dl-horizontal">
-                <dt>Языки</dt>
-                <dd>
-                    выбор из списка языков: русский, английский, немецкий и т.д.
-                </dd>
-
-                <dt>Навыки</dt>
-                <dd>
-                    выбор из списка навыков: дизайн, программирование, верстка, физика, химия и т.д.
-                </dd>
-
-                <dt>География</dt>
+                <dt><?php echo t('Contacts') ?></dt>
                 <dd>
                     <div class="row">
-                        <?php echo CHtml::activeLabel($model, 'country'); ?>
-                        <?php echo CHtml::activeTextField($model, 'country'); ?>
+                        <?php echo CHtml::activeLabel($model, 'email'); ?>
+                        <?php echo CHtml::activeTextField($model, 'email'); ?>
                     </div>
+
                     <div class="row">
-                        <?php echo CHtml::activeLabel($model, 'city'); ?>
-                        <?php echo CHtml::activeTextField($model, 'city'); ?>
+                        <?php echo CHtml::activeLabel($model, 'phone'); ?>
+                        <?php echo CHtml::activeTextField($model, 'phone'); ?>
+                    </div>
+
+                    <div class="row">
+                        <?php echo CHtml::activeLabel($model, 'website'); ?>
+                        <?php echo CHtml::activeTextField($model, 'website'); ?>
                     </div>
                 </dd>
 
-                <dt>Социальные сети</dt>
+                <dt><?php echo t('Social Networks') ?></dt>
                 <dd>
                     <div class="row">
                         <?php echo CHtml::activeLabel($model, 'vkontakte'); ?>
@@ -164,13 +142,37 @@ $this->breadcrumbs = array(
                         <?php echo CHtml::activeTextField($model, 'instagram'); ?>
                     </div>
                 </dd>
+
+                <dt><?php echo t('Skills') ?></dt>
+                <dd>
+                    <div class="row">
+                        <?php echo t('Languages') ?><br>
+                        english, deutsch, русский
+                    </div>
+                    <div class="row">
+                        <?php echo t('Skills') ?><br>
+                        ...
+                    </div>
+                </dd>
+
+                <dt><?php echo t('Geography') ?></dt>
+                <dd>
+                    <div class="row">
+                        <?php echo CHtml::activeLabel($model, 'country'); ?>
+                        <?php echo CHtml::activeTextField($model, 'country'); ?>
+                    </div>
+                    <div class="row">
+                        <?php echo CHtml::activeLabel($model, 'city'); ?>
+                        <?php echo CHtml::activeTextField($model, 'city'); ?>
+                    </div>
+                </dd>
             </dl>
         </div>
 
 		<br class="clear">
 
 		<div class="row submit">
-			<?php echo CHtml::submitButton('Сохранить', array('class' => 'btn btn-primary')); ?>
+			<?php echo CHtml::submitButton(t('Save'), array('class' => 'btn btn-primary')); ?>
 		</div>
 
 		<?php echo CHtml::endForm(); ?>
@@ -180,7 +182,7 @@ $this->breadcrumbs = array(
 
 	<div class="modal-header">
 		<a class="close" data-dismiss="modal">&times;</a>
-		<h4>Загрузка фотографии</h4>
+		<h4><?php echo t('Upload a Photo') ?></h4>
 	</div>
 
 	<div class="modal-body">
@@ -208,7 +210,7 @@ $this->breadcrumbs = array(
 		<?php $this->widget(
 			'bootstrap.widgets.TbButton',
 			array(
-				'label' => 'Закрыть',
+				'label' => t('Close'),
 				'url' => '#',
 				'htmlOptions' => array('data-dismiss' => 'modal'),
 			)
@@ -221,19 +223,19 @@ $this->breadcrumbs = array(
 
 	<div class="modal-header">
 		<a class="close" data-dismiss="modal">&times;</a>
-		<h4>Смена пароля</h4>
+		<h4><?php echo t('Change Password') ?></h4>
 	</div>
 
 	<div class="modal-body">
 		<div class="alert" id="passwordsNotEqual">
-			Пароли не совпадают
+            <?php echo t('Passwords doesn\'t match') ?>
 		</div>
 		<div class="row">
-			<label for="password">Новый пароль</label>
+			<label for="password"><?php echo t('New password') ?></label>
 			<input id="password" type="password">
 		</div>
 		<div class="row">
-			<label for="password">Повторите пароль</label>
+			<label for="password"><?php echo t('Repeat password') ?></label>
 			<input id="repeat_password" type="password">
 		</div>
 	</div>

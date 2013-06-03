@@ -1,10 +1,10 @@
 <?php
 $this->breadcrumbs=array(
-	'Сообщество'
+    t('Community')
 );
 ?>
 
-<h1>Сообщество</h1>
+<h1><?php echo t('Community') ?></h1>
 
 <?php foreach ($model as $user): ?>
     <div class="span-1" style="height: 300px; overflow: hidden;">

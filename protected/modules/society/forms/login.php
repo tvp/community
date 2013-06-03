@@ -1,6 +1,6 @@
 <?php
 return array(
-	'title' => 'Пожалуйста, представьтесь',
+	'title' => t('Please, login'),
 	'elements' => array(
 		'email' => array(
 			'type' => 'text',
