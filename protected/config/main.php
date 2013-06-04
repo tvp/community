@@ -65,7 +65,7 @@ return array(
             'class' => 'application.extensions.urlManager.LangUrlManager',
             'languages' => array('ru', 'en'),
             'urlFormat' => 'path',
-            'showScriptName' => false,
+            'showScriptName' => true,
             'rules' => array(
                 '<lang:(ru|en)>' => '',
                 '<lang:(ru|en)>/<module:\\w+>/<controller:\\w+>/<action:\\w+>' => '<module>/<controller>/<action>',
