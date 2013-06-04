@@ -33,7 +33,7 @@ class AccountsController extends Controller
 	public function actionLogin()
 	{
 		if (!Yii::app()->user->isGuest) {
-			$this->redirect(array('accounts/my'));
+			$this->redirect(array('dashboard/index'));
 		}
 
 		$model = new User(User::LOGIN);
@@ -44,7 +44,7 @@ class AccountsController extends Controller
 
 			if ($model->validate()) {
 				if ($model->login()) {
-					$this->redirect(array('my'));
+					$this->redirect(array('dashboard/index'));
 				}
 			}
 		}
@@ -73,7 +73,7 @@ class AccountsController extends Controller
 			$user->attributes = $_POST['User'];
 			if ($user->validate()) {
 				$user->save(false);
-				$this->redirect(array('/society/accounts/my'));
+				$this->redirect(array('/society/dashboards/index'));
 			}
 		}
 		$this->layout = '//layouts/profile';

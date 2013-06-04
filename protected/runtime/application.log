@@ -3458,3 +3458,21 @@ Stack trace:
 #8 E:\www\dev\community\protected\yiic.php(7): require_once()
 #9 E:\www\dev\community\protected\yiic(4): require_once()
 
+2013/06/05 00:11:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "society/dashboards/index/lang/ru".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('society/dashboa...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/society/dashboards/index/lang/ru
+HTTP_REFERER=http://community.dev/index.php/society/accounts/my/lang/ru
+---
+2013/06/05 00:11:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "society/dashboards/index/lang/ru".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('society/dashboa...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/society/dashboards/index/lang/ru
+HTTP_REFERER=http://community.dev/index.php/society/accounts/my/lang/ru
+---
