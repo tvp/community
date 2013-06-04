@@ -3402,3 +3402,59 @@ Stack trace:
 REQUEST_URI=/index.php/society/dashboard/index/lang/ru
 HTTP_REFERER=http://community.dev/index.php/society/accounts/my/lang/ru
 ---
+2013/06/04 22:02:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'community.migrations' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `migrations`.
+2013/06/04 23:03:04 [warning] [application] Не удалось присвоить небезопасный атрибут "vkontakte" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 23:03:04 [warning] [application] Не удалось присвоить небезопасный атрибут "twitter" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 23:03:04 [warning] [application] Не удалось присвоить небезопасный атрибут "facebook" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 23:03:04 [warning] [application] Не удалось присвоить небезопасный атрибут "google" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 23:03:04 [warning] [application] Не удалось присвоить небезопасный атрибут "instagram" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 23:03:04 [warning] [application] Не удалось присвоить небезопасный атрибут "country" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 23:03:04 [warning] [application] Не удалось присвоить небезопасный атрибут "city" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 23:03:09 [warning] [application] Не удалось присвоить небезопасный атрибут "vkontakte" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 23:03:09 [warning] [application] Не удалось присвоить небезопасный атрибут "twitter" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 23:03:09 [warning] [application] Не удалось присвоить небезопасный атрибут "facebook" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 23:03:09 [warning] [application] Не удалось присвоить небезопасный атрибут "google" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 23:03:09 [warning] [application] Не удалось присвоить небезопасный атрибут "instagram" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 23:03:09 [warning] [application] Не удалось присвоить небезопасный атрибут "country" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 23:03:09 [warning] [application] Не удалось присвоить небезопасный атрибут "city" класса "User".
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (73)
+in E:\www\dev\community\index.php (13)
+2013/06/04 22:33:44 [error] [php] file_get_contents(E:\www\dev\community\protected\migrations/data/countries.sql): failed to open stream: No such file or directory (E:\www\dev\community\protected\migrations\m130604_193152_countries.php:7)
+Stack trace:
+#0 E:\www\dev\community\framework\cli\commands\MigrateCommand.php(385): m130604_193152_countries->up()
+#1 E:\www\dev\community\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp()
+#2 unknown(0): MigrateCommand->actionUp()
+#3 E:\www\dev\community\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#4 E:\www\dev\community\framework\console\CConsoleCommandRunner.php(67): MigrateCommand->run()
+#5 E:\www\dev\community\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#6 E:\www\dev\community\framework\base\CApplication.php(169): CConsoleApplication->processRequest()
+#7 E:\www\dev\community\framework\yiic.php(33): CConsoleApplication->run()
+#8 E:\www\dev\community\protected\yiic.php(7): require_once()
+#9 E:\www\dev\community\protected\yiic(4): require_once()
+
