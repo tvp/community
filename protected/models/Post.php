@@ -40,10 +40,6 @@ class Post extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('user_id, group_id', 'numerical', 'integerOnly' => true),
-			array('created, updated, message', 'safe'),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('id, created, updated, user_id, group_id, message', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -52,9 +48,9 @@ class Post extends CActiveRecord
 	 */
 	public function relations()
 	{
-		// NOTE: you may need to adjust the relation name and the related
-		// class name for the relations automatically generated below.
 		return array(
+            'author' => array(self::BELONGS_TO, 'User', 'user_id'),
+            'group' => array(self::BELONGS_TO, 'Group', 'group_id'),
 		);
 	}
 

@@ -26,9 +26,7 @@ return array(
     ),
 
     'modules' => array(
-        'community',
         'society',
-        'festival',
         'admin',
         'gii' => array(
             'class' => 'system.gii.GiiModule',

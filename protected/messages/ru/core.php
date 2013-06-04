@@ -32,5 +32,10 @@ return array(
     'Languages' => 'Языки',
     'Geography' => 'География',
     'Save' => 'Сохранить',
-    'Close' => 'Закрыть'
+    'Close' => 'Закрыть',
+    'Dashboard' => 'Доска',
+    'Administration' => 'Администрирование',
+    'Error' => 'Ошибка',
+    'Groups' => 'Группы',
+    'Add' => 'Добавить',
 );

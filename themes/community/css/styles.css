@@ -20,3 +20,17 @@ h1 {
 	margin-bottom: 30px;
 	margin-left: 30px;
 }
+
+.post {
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px #eee;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.time {
+    font-size: 10px;
+}

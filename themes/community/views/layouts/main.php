@@ -24,7 +24,7 @@
                 array('label'=> t('Dashboard'), 'url'=>array('/society/dashboard/index'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=> t('Profile'), 'url'=>array('/society/accounts/my'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=> t('Community'), 'url'=>array('/society/accounts/index'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=> t('Administration'), 'url'=>array('/society/admin/index'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=> t('Administration'), 'url'=>array('/admin/dashboard/index'), 'visible'=>!Yii::app()->user->isGuest, 'active' => ($this->module->getName() == 'admin')),
 				array('label'=> t('Logout').' ('.Yii::app()->user->name.')', 'url'=>array('/society/accounts/logout'), 'visible'=>!Yii::app()->user->isGuest),
             ),
         ),

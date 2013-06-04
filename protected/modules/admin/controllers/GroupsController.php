@@ -1,13 +1,37 @@
 <?php
 
-class CategoriesController extends Controller
+class GroupsController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/admin';
-	
+	public $layout='//layouts/column2';
+
+	/**
+	 * @return array action filters
+	 */
+	public function filters()
+	{
+		return array(
+			'accessControl', // perform access control for CRUD operations
+		);
+	}
+
+	/**
+	 * Specifies the access control rules.
+	 * This method is used by the 'accessControl' filter.
+	 * @return array access control rules
+	 */
+	public function accessRules()
+	{
+		return array(
+			array('allow',
+				'users'=>array('*'),
+			),
+		);
+	}
+
 	/**
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
@@ -25,16 +49,16 @@ class CategoriesController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Category;
+		$model=new Group;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Category']))
+		if(isset($_POST['Group']))
 		{
-			$model->attributes=$_POST['Category'];
+			$model->attributes=$_POST['Group'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('create',array(
@@ -54,9 +78,9 @@ class CategoriesController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Category']))
+		if(isset($_POST['Group']))
 		{
-			$model->attributes=$_POST['Category'];
+			$model->attributes=$_POST['Group'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -73,11 +97,17 @@ class CategoriesController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+		if(Yii::app()->request->isPostRequest)
+		{
+			// we only allow deletion via POST request
+			$this->loadModel($id)->delete();
 
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+			if(!isset($_GET['ajax']))
+				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		}
+		else
+			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
 	}
 
 	/**
@@ -85,10 +115,10 @@ class CategoriesController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$model=new Category('search');
+		$model=new Group('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Category']))
-			$model->attributes=$_GET['Category'];
+		if(isset($_GET['Group']))
+			$model->attributes=$_GET['Group'];
 
 		$this->render('index',array(
 			'model'=>$model,
@@ -98,13 +128,11 @@ class CategoriesController extends Controller
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
-	 * @param integer $id the ID of the model to be loaded
-	 * @return Category the loaded model
-	 * @throws CHttpException
+	 * @param integer the ID of the model to be loaded
 	 */
 	public function loadModel($id)
 	{
-		$model=Category::model()->findByPk($id);
+		$model=Group::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -112,11 +140,11 @@ class CategoriesController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Category $model the model to be validated
+	 * @param CModel the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='category-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='group-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
