@@ -22,10 +22,13 @@
                 array('label'=> t('Login'), 'url'=>array('/society/accounts/login'), 'visible'=>Yii::app()->user->isGuest),
                 array('label'=> t('Registration'), 'url'=>array('/society/accounts/register'), 'visible'=>Yii::app()->user->isGuest),
                 array('label'=> t('Dashboard'), 'url'=>array('/society/dashboard/index'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=> t('Profile'), 'url'=>array('/society/accounts/my'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=> t('Community'), 'url'=>array('/society/accounts/index'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=> t('Administration'), 'url'=>array('/admin/dashboard/index'), 'visible'=>!Yii::app()->user->isGuest, 'active' => ($this->module->getName() == 'admin')),
-				array('label'=> t('Logout').' ('.Yii::app()->user->name.')', 'url'=>array('/society/accounts/logout'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=> Yii::app()->user->name, 'icon'=>'user', 'visible'=>!Yii::app()->user->isGuest,
+                'items'=>array(
+                    array('label'=> t('Profile'), 'url'=>array('/society/accounts/my'), 'visible'=>!Yii::app()->user->isGuest),
+                    array('label'=> t('Logout'), 'url'=>array('/society/accounts/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                )),
             ),
         ),
     ),
