@@ -3354,3 +3354,51 @@ in /private/var/www/community/index.php (13)
 2013/06/03 12:50:44 [warning] [application] Не удалось присвоить небезопасный атрибут "instagram" класса "User".
 in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
 in /private/var/www/community/index.php (13)
+2013/06/04 11:46:44 [warning] [application] Не удалось присвоить небезопасный атрибут "vkontakte" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/04 11:46:44 [warning] [application] Не удалось присвоить небезопасный атрибут "twitter" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/04 11:46:44 [warning] [application] Не удалось присвоить небезопасный атрибут "facebook" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/04 11:46:44 [warning] [application] Не удалось присвоить небезопасный атрибут "google" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/04 11:46:44 [warning] [application] Не удалось присвоить небезопасный атрибут "instagram" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/04 11:46:44 [warning] [application] Не удалось присвоить небезопасный атрибут "country" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/04 11:46:44 [warning] [application] Не удалось присвоить небезопасный атрибут "city" класса "User".
+in /private/var/www/community/protected/modules/society/controllers/AccountsController.php (73)
+in /private/var/www/community/index.php (13)
+2013/06/04 17:54:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "society/dashboard/index/lang/ru".' in /private/var/www/community/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/www/community/framework/web/CWebApplication.php(141): CWebApplication->runController('society/dashboa...')
+#1 /private/var/www/community/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /private/var/www/community/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/society/dashboard/index/lang/ru
+HTTP_REFERER=http://community.dev/index.php/society/accounts/my/lang/ru
+---
+2013/06/04 17:54:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "society/dashboard/index/lang/ru".' in /private/var/www/community/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/www/community/framework/web/CWebApplication.php(141): CWebApplication->runController('society/dashboa...')
+#1 /private/var/www/community/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /private/var/www/community/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/society/dashboard/index/lang/ru
+HTTP_REFERER=http://community.dev/index.php/society/accounts/my/lang/ru
+---
+2013/06/04 17:54:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "society/dashboard/index/lang/ru".' in /private/var/www/community/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/www/community/framework/web/CWebApplication.php(141): CWebApplication->runController('society/dashboa...')
+#1 /private/var/www/community/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /private/var/www/community/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/society/dashboard/index/lang/ru
+HTTP_REFERER=http://community.dev/index.php/society/accounts/my/lang/ru
+---
