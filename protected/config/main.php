@@ -67,21 +67,18 @@ return array(
             'class' => 'application.extensions.urlManager.LangUrlManager',
             'languages' => array('ru', 'en'),
             'urlFormat' => 'path',
-            'showScriptName' => true,
+            'showScriptName' => false,
             'rules' => array(
+                '<lang:(ru|en)>' => '',
+                '<lang:(ru|en)>/<module:\\w+>/<controller:\\w+>/<action:\\w+>' => '<module>/<controller>/<action>',
+                '<lang:(ru|en)>/<module:\\w+>/<controller:\\w+>' => '<module>/<controller>',
+                '<lang:(ru|en)>/<module:\\w+>' => '<module>',
                 '<lang:(ru|en)>/<_c>/<_a>' => '<_c>/<_a>',
                 '<lang:(ru|en)>/<_c>' => '<_c>',
-                '<lang:(ru|en)>/' => '',
             ),
         ),
 
-        'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=community',
-            'emulatePrepare' => true,
-            'username' => 'root',
-            'password' => '',
-            'charset' => 'utf8',
-        ),
+        'db' => require(dirname(__FILE__).'/database.php'),
 
         'errorHandler' => array(
             'errorAction' => 'site/error',

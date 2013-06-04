@@ -11,13 +11,8 @@ return array(
 
 	// application components
 	'components'=>array(
-        'db'=>array(
-            'connectionString' => 'mysql:host=localhost;dbname=community',
-            'emulatePrepare' => true,
-            'username' => 'root',
-            'password' => '',
-            'charset' => 'utf8',
-        ),
+        'db' => require(dirname(__FILE__).'/database.php'),
+
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
