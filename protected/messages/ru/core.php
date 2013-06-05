@@ -38,4 +38,7 @@ return array(
     'Error' => 'Ошибка',
     'Groups' => 'Группы',
     'Add' => 'Добавить',
+    'Vkontakte' => 'Вконтакте',
+    'Country' => 'Страна',
+    'City' => 'Город',
 );

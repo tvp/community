@@ -74,7 +74,7 @@ class User extends CActiveRecord
 				'on' => self::SIGNUP,
 				'message' => 'Пароли не совпадают'
 			),
-			array('id, email, phone, password', 'safe', 'on' => 'search'),
+			array('id, email, phone, password, first_name, last_name, second_name, country, city, vkontakte, facebook, twitter, google, instagram', 'safe'),
 			array(
 				'email',
 				'filter',
@@ -99,6 +99,13 @@ class User extends CActiveRecord
 			'password' => t('Password'),
 			'passwordRepeat' => t('Repeat Password'),
 			'photo' => t('Photo'),
+            'country' => t('Country'),
+            'city' => t('City'),
+            'vkontakte' => t('Vkontakte'),
+            'facebook' => t('Facebook'),
+            'twitter' => t('Twitter'),
+            'google' => t('Google+'),
+            'instagram' => t('Instagram'),
 		);
 	}
 
