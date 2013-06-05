@@ -22,7 +22,7 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
-        'ext.yii-mail.*',
+        'application.components.yii-mail.*',
     ),
 
     'modules' => array(
@@ -38,10 +38,6 @@ return array(
         ),
 
         'yiicCommandMap' => array(
-            'email' => array(
-                'class' => 'ext.mailer.MailerCommand',
-                'from' => 'aleksey@razbakov.com',
-            ),
             'migrate' => array(
                 'class' => 'system.cli.commands.MigrateCommand',
                 'migrationPath' => 'application.migrations',
@@ -91,7 +87,7 @@ return array(
             ),
         ),
         'mail' => array(
-            'class' => 'ext.yii-mail.YiiMail',
+            'class' => 'application.components.yii-mail.YiiMail',
             'transportType' => 'php',
             'viewPath' => 'application.views.mail',
             'logging' => true,
