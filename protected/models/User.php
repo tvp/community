@@ -46,7 +46,7 @@ class User extends CActiveRecord
 				'message' => 'Заполните поле {attribute}'
 			),
 			array(
-				'first_name, last_name, second_name, email, phone, website',
+				'first_name, last_name, email, phone',
 				'required',
 				'on' => self::PROFILE,
 				'message' => 'Заполните поле {attribute}'

@@ -10,13 +10,13 @@ class AccountsController extends Controller
 		if ($form->submitted('register') && $form->validate()) {
 			$user = $form->model;
 			if ($user->save()) {
-//                $message = new YiiMailMessage;
-//                $message->view = 'registrationIntro';
-//                $message->setSubject('[Кабинет] Подтверждение регистрации');
-//                $message->setBody(array('user'=>$user), 'text/html');
-//                $message->addTo($user->email);
-//                $message->from = Yii::app()->params['adminEmail'];
-//                Yii::app()->mail->send($message);
+                $message = new YiiMailMessage;
+                $message->view = 'registrationIntro';
+                $message->setSubject('[Community Online] Подтверждение регистрации');
+                $message->setBody(array('user'=>$user), 'text/html');
+                $message->addTo($user->email);
+                $message->from = Yii::app()->params['adminEmail'];
+                Yii::app()->mail->send($message);
 
 				$this->redirect(array('accounts/welcome'));
 			}
@@ -69,11 +69,10 @@ class AccountsController extends Controller
 	{
 		$user = User::model()->findByPk(Yii::app()->user->id);
 		if (isset($_POST['User'])) {
-			$user->scenario = User::PROFILE;
 			$user->attributes = $_POST['User'];
 			if ($user->validate()) {
-				$user->save(false);
-				$this->redirect(array('/society/dashboards/index'));
+				$user->save(true);
+				$this->redirect(array('/society/accounts/my'));
 			}
 		}
 		$this->layout = '//layouts/profile';
