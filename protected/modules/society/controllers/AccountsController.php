@@ -77,7 +77,7 @@ class AccountsController extends Controller
 
     public function actionIndex()
     {
-        $user = User::model()->findAll();
+        $user = User::model()->findAll('confirmed=1');
         $this->layout = '//layouts/profile';
         $this->render('index', array('model' => $user));
     }
