@@ -9,12 +9,14 @@ class UserIdentity extends CUserIdentity
 {
 	private $_id;
 	
-    public function authenticate()
+    public function authenticate($autoLogin = false)
     {
         $record = User::model()->findByAttributes(array('email' => $this->username));
         if($record === null)
             $this->errorCode = self::ERROR_USERNAME_INVALID;
-        else if($record->password !== User::hashPassword($this->password))
+        else if($autoLogin && $record->password !== $this->password)
+            $this->errorCode = self::ERROR_PASSWORD_INVALID;
+        else if(!$autoLogin && $record->password !== User::hashPassword($this->password))
             $this->errorCode = self::ERROR_PASSWORD_INVALID;
         else
         {

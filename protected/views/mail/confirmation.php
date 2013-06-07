@@ -3,7 +3,7 @@
 
 <br>
 --<br>
-Sincerly,<br>
+Sincerely,<br>
 Aleksey Razbakov<br>
 aleksey@razbakov.com<br>
 <br>

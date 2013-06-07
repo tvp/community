@@ -38,7 +38,9 @@ class AccountsController extends Controller
             $user->confirmed = 1;
             $user->save(false);
             Yii::app()->user->setFlash('success', t("Your email was successfully confirmed"));
-            $user->login();
+            $identity = new UserIdentity($user->email, $user->password);
+            $identity->authenticate(true);
+            Yii::app()->user->login($identity);
             $this->redirect(array('dashboard/index'));
         } else {
             throw new CHttpException(404, t('Confirmation code is wrong'));
