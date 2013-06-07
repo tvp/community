@@ -145,7 +145,6 @@ class User extends CActiveRecord
 		if (parent::beforeSave()) {
 			if ($this->isNewRecord) {
 				$this->registered = date('Y-m-d H:i:s');
-                $this->hash = self::hashPassword(time());
 				$this->password = self::hashPassword($this->password);
 			}
 
@@ -177,4 +176,17 @@ class User extends CActiveRecord
 			return false;
 		}
 	}
+
+    public function confirmEmail()
+    {
+        $this->hash = md5(time());
+        $this->save(false);
+        $message = new YiiMailMessage;
+        $message->view = 'confirmation_' . Yii::app()->language;
+        $message->setSubject(t('[Community Online] Confirmation'));
+        $message->setBody(array('user'=>$this), 'text/html');
+        $message->addTo($this->email);
+        $message->from = Yii::app()->params['adminEmail'];
+        Yii::app()->mail->send($message);
+    }
 }

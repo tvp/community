@@ -10,14 +10,7 @@ class AccountsController extends Controller
 		if ($form->submitted('register') && $form->validate()) {
 			$user = $form->model;
 			if ($user->save()) {
-                $message = new YiiMailMessage;
-                $message->view = 'confirmation_' . Yii::app()->language;
-                $message->setSubject(t('[Community Online] Confirmation'));
-                $message->setBody(array('user'=>$user), 'text/html');
-                $message->addTo($user->email);
-                $message->from = Yii::app()->params['adminEmail'];
-                Yii::app()->mail->send($message);
-
+                $model->confirmEmail();
 				$this->redirect(array('accounts/welcome'));
 			}
 		} else {
