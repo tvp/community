@@ -100,6 +100,6 @@ return array(
     // using Yii::app()->params['paramName']
     'params' => array(
         // this is used in contact page
-        'adminEmail' => 'aleksey@razbakov.com',
+        'adminEmail' => 'support@razbakov.com',
     ),
 );
