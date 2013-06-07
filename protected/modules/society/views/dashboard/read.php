@@ -16,7 +16,10 @@ $this->breadcrumbs=array(
 </div>
 <div class="span4">
     <h1><?php echo t('Dashboard') ?> <?php echo $group['title'] ?></h1>
-
+    <div class="actions">
+        <?php echo CHtml::link('<i class="icon icon-bookmark"></i> Subscribe', array('subscribe'), array('class'=>'btn')); ?>
+    </div>
+    <br>
     <p><?php echo $group['message'] ?></p>
 
     <?php echo CHtml::beginForm(); ?>
