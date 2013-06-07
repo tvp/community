@@ -1,0 +1,83 @@
+date/time         : 2013-06-08, 00:47:05, 85ms
+computer name     : CREATOR
+user name         : яхярелю <admin>
+registered owner  : razbakov.aleksey@gmail.com
+operating system  : Windows NT New x64 build 9200
+system language   : Ukrainian
+system up time    : 20 days
+program up time   : 943 milliseconds
+processors        : 4x Intel(R) Core(TM) i3-2367M CPU @ 1.40GHz
+physical memory   : 1320/4007 MB (free/total)
+free disk space   : (C:) 44,03 GB (E:) 111,24 GB
+display mode      : 1024x768, 32 bit
+process id        : $1e20
+allocated memory  : 8,44 MB
+command line      : "E:\programs\zend-server\sendmail\sendmail.exe" -t -i -faleksey@razbakov.com
+executable        : sendmail.exe
+exec. date/time   : 2011-06-18 02:10
+compiled with     : Delphi 2006/07
+madExcept version : 3.0l
+callstack crc     : $205f8196, $e9b3594b, $e9b3594b
+exception number  : 1
+exception class   : EInOutError
+exception message : I/O error 105.
+
+main thread ($870):
+004b675c +18a8 sendmail.exe sendmail                        922 +440 initialization
+776a2e3e +0081 ntdll.dll                                             RtlRaiseStatus
+776a2cb6 +000a ntdll.dll                                             KiUserExceptionDispatcher
+0040474d +001d sendmail.exe System                          262   +0 @AfterConstruction
+00435daa +0016 sendmail.exe IdStack                         660   +1 TIdStack.RaiseLastSocketError
+0045f2e8 +0100 sendmail.exe IdSSLOpenSSLHeaders           16464  +22 EIdOpenSSLAPISSLError.RaiseExceptionCode
+0045f1d9 +0021 sendmail.exe IdSSLOpenSSLHeaders           16433   +1 EIdOpenSSLAPISSLError.RaiseException
+00466686 +012a sendmail.exe IdSSLOpenSSL                   2668  +17 TIdSSLSocket.Connect
+00465a1c +00dc sendmail.exe IdSSLOpenSSL                   2262  +21 TIdSSLIOHandlerSocketOpenSSL.OpenEncodedConnection
+004655f6 +0062 sendmail.exe IdSSLOpenSSL                   2106   +9 TIdSSLIOHandlerSocketOpenSSL.StartSSL
+00465587 +006b sendmail.exe IdSSLOpenSSL                   2093  +15 TIdSSLIOHandlerSocketOpenSSL.ConnectClient
+00444a9f +0063 sendmail.exe IdIOHandlerSocket               335  +13 TIdIOHandlerSocket.Open
+00465637 +0007 sendmail.exe IdSSLOpenSSL                   2122   +1 TIdSSLIOHandlerSocketOpenSSL.Open
+0044157d +0235 sendmail.exe IdTCPClient                     318  +53 TIdTCPClientCustom.Connect
+00445cc8 +00a4 sendmail.exe IdExplicitTLSClientServerBase   257  +23 TIdExplicitTLSClient.Connect
+0045ab7b +0017 sendmail.exe IdSMTP                          373   +2 TIdSMTP.Connect
+004b5f14 +1060 sendmail.exe sendmail                        808 +326 initialization
+76fb8541 +000c KERNEL32.DLL                                          BaseThreadInitThunk
+
+thread $1c10:
+76fb8541 +c KERNEL32.DLL  BaseThreadInitThunk
+
+stack dump:
+0018f52c  5c 67 4b 00 de fa ed 0e - 01 00 00 00 07 00 00 00  \gK.............
+0018f53c  40 f5 18 00 5c 67 4b 00 - f8 c9 60 00 5c 67 4b 00  @...\gK...`.\gK.
+0018f54c  5c 67 4b 00 04 fe 18 00 - 84 ff 18 00 5c f5 18 00  \gK.........\...
+0018f55c  00 00 00 00 64 30 40 00 - 00 00 00 00 38 cc 60 00  ....d0@.....8.`.
+0018f56c  5c 67 4b 00 00 00 00 00 - 28 5e 43 00 38 cc 60 00  \gK.....(^C.8.`.
+0018f57c  94 f6 18 00 a8 f5 18 00 - b4 f5 18 00 00 00 00 00  ................
+0018f58c  00 00 00 00 00 00 00 00 - 71 2e 6a 77 94 f6 18 00  ........q.jw....
+0018f59c  04 fe 18 00 e4 f6 18 00 - 0c f6 18 00 98 fd 18 00  ................
+0018f5ac  85 2e 6a 77 04 fe 18 00 - 7c f6 18 00 43 2e 6a 77  ..jw....|...C.jw
+0018f5bc  94 f6 18 00 04 fe 18 00 - e4 f6 18 00 0c f6 18 00  ................
+0018f5cc  1c 67 4b 00 04 fe 18 00 - 94 f6 18 00 00 00 00 00  .gK.............
+0018f5dc  f2 b2 6c 77 94 f6 18 00 - 04 fe 18 00 e4 f6 18 00  ..lw............
+0018f5ec  0c f6 18 00 1c 67 4b 00 - 68 1e 62 00 c0 3f 46 00  .....gK.h.b..?F.
+0018f5fc  94 f6 18 00 01 00 00 00 - 00 c0 18 00 00 00 00 00  ................
+0018f60c  00 00 00 00 00 00 19 00 - 00 00 00 00 04 fe 18 00  ................
+0018f61c  32 00 00 00 e4 f6 18 00 - 70 00 00 00 64 e8 14 02  2.......p...d...
+0018f62c  02 00 00 00 64 00 00 00 - e8 ea 14 02 04 eb 14 02  ....d...........
+0018f63c  04 00 00 00 29 eb 14 02 - 23 56 f4 9e 56 06 d2 2a  ....)...#V..V..*
+0018f64c  ca b2 5e 7e 00 00 14 02 - e0 ea 14 02 00 00 00 00  ..^~............
+0018f65c  38 9f ff 87 b8 aa 7d 43 - 8b 50 0d 6d e0 ea 14 02  8.....}C.P.m....
+
+disassembling:
+[...]
+004b6742       mov     edx, [ebp-$15c]
+004b6748       mov     eax, [$4bd968]
+004b674d       call    -$b0c2a ($405b28)      ; System.@Write0LString
+004b6752       call    -$b297b ($403ddc)      ; System.@WriteLn
+004b6757       call    -$b36bc ($4030a0)      ; System.@_IOTest
+004b675c 922 > mov     eax, [ebx+4]
+004b675f       call    -$3b3c ($4b2c28)       ; sendmail.errorLog
+004b6764 924   call    -$b1a55 ($404d14)      ; System.@RaiseAgain
+004b6769       call    -$b1a06 ($404d68)      ; System.@DoneExcept
+004b676e 931   xor     eax, eax
+004b6770       pop     edx
+[...]
