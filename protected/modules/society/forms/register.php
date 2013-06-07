@@ -10,11 +10,11 @@ return array(
 			'type' => 'text',
 			'maxlength' => 32,
 		),
+        'phone' => array(
+            'type' => 'text',
+            'maxlength' => 32,
+        ),
 		'email' => array(
-			'type' => 'text',
-			'maxlength' => 32,
-		),
-		'phone' => array(
 			'type' => 'text',
 			'maxlength' => 32,
 		),
