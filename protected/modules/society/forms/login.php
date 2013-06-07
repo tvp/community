@@ -14,7 +14,7 @@ return array(
 	'buttons' => array(
 		'login' => array(
 			'type' => 'submit',
-			'label' => 'Войти',
+			'label' => t('Login'),
 			'class' => 'btn btn-primary btn-large'
 		),
 	),

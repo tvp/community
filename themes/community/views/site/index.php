@@ -17,17 +17,15 @@ $this->pageTitle=Yii::app()->name;
 </section>
 <aside class="span4">
     <h3>The Venus Project Activism</h3>
-    <p>Do you want to  help us?</p>
+    <p>Would you like to join us?</p>
     <p><a class="btn btn-large btn-primary" href="<?php echo $this->createUrl('/society/accounts/register') ?>">Join Us</a></p>
 
-    <h3>For members</h3>
-    <p>Do you already have an account?</p>
+    <h3>Member's login</h3>
     <p><a class="btn" href="<?php echo $this->createUrl('/society/accounts/login') ?>">Login</a></p>
 
-    <h3>Support</h3>
-    <p>Do you have questions or proposals?</p>
-    <p>Contact author <a href="mailto:aleksey@razbakov.com">aleksey@razbakov.com</a></p>
-
+    <h3>Contact Us</h3>
+    <p>Do you have a question or suggestion?</p>
+    <p>Add your ideas to <a href="https://github.com/tvp/community/issues">our issue tracking system</a>.</p>
 
 </aside>
 

@@ -4690,3 +4690,277 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2013/06/07 23:45:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/
+---
+2013/06/07 23:45:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/07 22:52:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists. The SQL statement executed was: CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `registered` datetime NOT NULL,
+  `first_name` varchar(255) NOT NULL,
+  `last_name` varchar(255) NOT NULL,
+  `second_name` varchar(255) NOT NULL,
+  `website` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `zip` varchar(10) NOT NULL,
+  `city` varchar(255) NOT NULL,
+  `photo` varchar(255) NOT NULL,
+  `crop_x` int(11) NOT NULL,
+  `crop_y` int(11) NOT NULL,
+  `crop_w` int(11) NOT NULL,
+  `crop_h` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;.
+2013/06/07 23:53:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/login
+---
+2013/06/07 23:53:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/07 23:53:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/07 23:54:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/07 23:54:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/login
+---
+2013/06/07 23:54:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/07 23:54:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/dashboard/index
+---
+2013/06/07 23:54:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 00:02:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/dashboard/index
+---
+2013/06/08 00:02:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 00:03:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/en/society/dashboard/index
+---
+2013/06/08 00:03:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 00:03:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/dashboard/index
+---
+2013/06/08 00:03:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 00:03:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/en/society/dashboard/index
+---
+2013/06/08 00:03:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 00:03:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/dashboard/index
+---
+2013/06/08 00:03:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 00:03:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/en/society/dashboard/index
+---
+2013/06/08 00:03:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 00:03:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/dashboard/index
+---
+2013/06/08 00:03:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 00:03:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/en/society/dashboard/index
+---
+2013/06/08 00:03:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 00:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/dashboard/index
+---
+2013/06/08 00:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 00:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/en/society/dashboard/index
+---
+2013/06/08 00:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

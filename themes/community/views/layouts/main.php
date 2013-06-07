@@ -36,6 +36,15 @@
 
 <div class="container" id="page">
 
+    <div class="language">
+        <?php echo CHtml::link('<span class="ru">русский</span>', array('/', Yii::app()->urlManager->langParam=>'ru'), array(
+        'class' => ((Yii::app()->language == 'ru') ? 'action' : ''),
+    ));?>
+        <?php echo CHtml::link('<span class="en">english</span>', array('/', Yii::app()->urlManager->langParam=>'en'), array(
+        'class' => ((Yii::app()->language == 'en') ? 'action' : ''),
+    ));?>
+    </div>
+
 	<?php $this->widget('bootstrap.widgets.TbAlert', array(
 	        'block'=>true, // display a larger alert block?
 	        'fade'=>true, // use transitions?
@@ -48,16 +57,6 @@
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
-
-    <div class="language">
-        <?php echo CHtml::link('<span class="ru">русский</span>', array('/', Yii::app()->urlManager->langParam=>'ru'), array(
-        'class' => ((Yii::app()->language == 'ru') ? 'action' : ''),
-    ));?>
-        <?php echo CHtml::link('<span class="en">english</span>', array('/', Yii::app()->urlManager->langParam=>'en'), array(
-        'class' => ((Yii::app()->language == 'en') ? 'action' : ''),
-    ));?>
-    </div>
-
 </div><!-- page -->
 
 </body>
