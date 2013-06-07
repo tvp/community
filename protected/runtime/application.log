@@ -7461,3 +7461,334 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2013/06/08 03:22:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Проверочный код не верный' in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php:46
+Stack trace:
+#0 [internal function]: AccountsController->actionConfirm('2')
+#1 E:\www\dev\community\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AccountsController), Array)
+#2 E:\www\dev\community\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AccountsController), Object(ReflectionMethod), Array)
+#3 E:\www\dev\community\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\www\dev\community\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\www\dev\community\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\www\dev\community\framework\web\CWebApplication.php(282): CController->run('confirm')
+#7 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('society/account...')
+#8 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\www\dev\community\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/ru/society/accounts/confirm/2
+---
+2013/06/08 03:22:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/confirm/2
+---
+2013/06/08 03:22:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 03:22:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in E:\www\dev\community\framework\web\CController.php:336
+Stack trace:
+#0 E:\www\dev\community\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\www\dev\community\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\www\dev\community\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\www\dev\community\framework\web\CWebApplication.php(282): CController->run('confirm')
+#4 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('society/account...')
+#5 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 E:\www\dev\community\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 03:22:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in E:\www\dev\community\framework\web\CController.php:336
+Stack trace:
+#0 E:\www\dev\community\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\www\dev\community\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\www\dev\community\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\www\dev\community\framework\web\CWebApplication.php(282): CController->run('confirm')
+#4 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('society/account...')
+#5 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 E:\www\dev\community\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 03:22:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in E:\www\dev\community\framework\web\CController.php:336
+Stack trace:
+#0 E:\www\dev\community\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\www\dev\community\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\www\dev\community\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\www\dev\community\framework\web\CWebApplication.php(282): CController->run('confirm')
+#4 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('society/account...')
+#5 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 E:\www\dev\community\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 03:22:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in E:\www\dev\community\framework\web\CController.php:336
+Stack trace:
+#0 E:\www\dev\community\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\www\dev\community\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\www\dev\community\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\www\dev\community\framework\web\CWebApplication.php(282): CController->run('confirm')
+#4 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('society/account...')
+#5 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 E:\www\dev\community\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 03:22:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in E:\www\dev\community\framework\web\CController.php:336
+Stack trace:
+#0 E:\www\dev\community\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\www\dev\community\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\www\dev\community\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\www\dev\community\framework\web\CWebApplication.php(282): CController->run('confirm')
+#4 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('society/account...')
+#5 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 E:\www\dev\community\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 03:22:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in E:\www\dev\community\framework\web\CController.php:336
+Stack trace:
+#0 E:\www\dev\community\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\www\dev\community\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\www\dev\community\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\www\dev\community\framework\web\CWebApplication.php(282): CController->run('confirm')
+#4 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('society/account...')
+#5 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 E:\www\dev\community\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 03:22:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in E:\www\dev\community\framework\web\CController.php:336
+Stack trace:
+#0 E:\www\dev\community\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\www\dev\community\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\www\dev\community\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\www\dev\community\framework\web\CWebApplication.php(282): CController->run('confirm')
+#4 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('society/account...')
+#5 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 E:\www\dev\community\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/confirm/
+---
+2013/06/08 03:22:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 03:22:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Проверочный код не верный' in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php:46
+Stack trace:
+#0 [internal function]: AccountsController->actionConfirm('null')
+#1 E:\www\dev\community\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AccountsController), Array)
+#2 E:\www\dev\community\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AccountsController), Object(ReflectionMethod), Array)
+#3 E:\www\dev\community\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\www\dev\community\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\www\dev\community\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\www\dev\community\framework\web\CWebApplication.php(282): CController->run('confirm')
+#7 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('society/account...')
+#8 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\www\dev\community\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/ru/society/accounts/confirm/null
+---
+2013/06/08 03:22:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/confirm/null
+---
+2013/06/08 03:22:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 03:22:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Проверочный код не верный' in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php:46
+Stack trace:
+#0 [internal function]: AccountsController->actionConfirm('NULL')
+#1 E:\www\dev\community\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AccountsController), Array)
+#2 E:\www\dev\community\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AccountsController), Object(ReflectionMethod), Array)
+#3 E:\www\dev\community\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\www\dev\community\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\www\dev\community\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\www\dev\community\framework\web\CWebApplication.php(282): CController->run('confirm')
+#7 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('society/account...')
+#8 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\www\dev\community\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/ru/society/accounts/confirm/NULL
+---
+2013/06/08 03:22:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/confirm/NULL
+---
+2013/06/08 03:22:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 03:22:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Проверочный код не верный' in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php:46
+Stack trace:
+#0 [internal function]: AccountsController->actionConfirm('0')
+#1 E:\www\dev\community\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AccountsController), Array)
+#2 E:\www\dev\community\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AccountsController), Object(ReflectionMethod), Array)
+#3 E:\www\dev\community\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\www\dev\community\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\www\dev\community\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\www\dev\community\framework\web\CWebApplication.php(282): CController->run('confirm')
+#7 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('society/account...')
+#8 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 E:\www\dev\community\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/ru/society/accounts/confirm/0
+---
+2013/06/08 03:22:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/confirm/0
+---
+2013/06/08 03:22:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
