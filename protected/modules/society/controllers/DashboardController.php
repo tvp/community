@@ -9,7 +9,7 @@ class DashboardController extends Controller
             $user->hash = md5(time());
             $user->save(false);
             Yii::app()->user->logout();
-            $this->redirect(array('/accounts/welcome'));
+            $this->redirect(array('/society/accounts/welcome'));
         }
 
         $groups = Group::model()->findAll();
