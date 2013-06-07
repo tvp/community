@@ -10,13 +10,13 @@ class AccountsController extends Controller
 		if ($form->submitted('register') && $form->validate()) {
 			$user = $form->model;
 			if ($user->save()) {
-//                $message = new YiiMailMessage;
-//                $message->view = 'registrationIntro';
-//                $message->setSubject('[Community Online] Подтверждение регистрации');
-//                $message->setBody(array('user'=>$user), 'text/html');
-//                $message->addTo($user->email);
-//                $message->from = Yii::app()->params['adminEmail'];
-//                Yii::app()->mail->send($message);
+                $message = new YiiMailMessage;
+                $message->view = 'confirmation';
+                $message->setSubject(t('[Community Online] Confirmation'));
+                $message->setBody(array('user'=>$user), 'text/html');
+                $message->addTo($user->email);
+                $message->from = Yii::app()->params['adminEmail'];
+                Yii::app()->mail->send($message);
 
 				$this->redirect(array('accounts/welcome'));
 			}
@@ -27,17 +27,23 @@ class AccountsController extends Controller
 
 	public function actionWelcome()
 	{
-        $user = User::model()->find('email="aleksey@razbakov.com"');
-
-        $message = new YiiMailMessage;
-        $message->view = 'registrationIntro';
-        $message->setSubject('[Community Online] Подтверждение регистрации');
-        $message->setBody(array('user'=>$user), 'text/html');
-        $message->addTo($user->email);
-        $message->from = Yii::app()->params['adminEmail'];
-        Yii::app()->mail->send($message);
-//        $this->render('welcome');
+        $this->render('welcome');
 	}
+
+    public function actionConfirm($hash)
+    {
+        $user = User::model()->find('hash='.$hash);
+        if($user) {
+            $user->hash = '';
+            $user->confirmed = 1;
+            $user->save(false);
+            Yii::app()->user->setFlash('success', t("Your email was successfully confirmed"));
+            $user->login();
+            $this->redirect(array('dashboard/index'));
+        } else {
+            throw new CHttpException(404, t('Confirmation code is wrong'));
+        }
+    }
 
 	public function actionLogin()
 	{

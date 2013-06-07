@@ -64,6 +64,7 @@ return array(
             'showScriptName' => true,
             'rules' => array(
                 '<lang:(ru|en)>' => '',
+                '<lang:(ru|en)>/society/accounts/confirm/<hash>' => 'society/accounts/confirm',
                 '<lang:(ru|en)>/<module:\\w+>/<controller:\\w+>/<action:\\w+>' => '<module>/<controller>/<action>',
                 '<lang:(ru|en)>/<module:\\w+>/<controller:\\w+>' => '<module>/<controller>',
                 '<lang:(ru|en)>/<module:\\w+>' => '<module>',

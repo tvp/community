@@ -1,5 +1,5 @@
 <p>Добро пожаловать в Community Online, <?php echo $user->first_name ?>.</p>
-<p>Для начала работы <a href="http://tvp.cabinet.io/">подтвердите ваш email</a></p>
+<p>Для начала работы <a href="http://tvp.cabinet.io/index.php/ru/society/accounts/confirm/hash/<?php echo $user->hash ?>">подтвердите ваш email</a></p>
 
 <br>
 --<br>

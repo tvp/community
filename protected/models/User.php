@@ -43,36 +43,36 @@ class User extends CActiveRecord
 				'first_name, last_name, email, phone, password, passwordRepeat',
 				'required',
 				'on' => self::SIGNUP,
-				'message' => 'Заполните поле {attribute}'
+				'message' => t('Fill {attribute}')
 			),
 			array(
 				'first_name, last_name, email, phone',
 				'required',
 				'on' => self::PROFILE,
-				'message' => 'Заполните поле {attribute}'
+				'message' => t('Fill {attribute}')
 			),
-			array('email, password', 'required', 'on' => self::LOGIN, 'message' => 'Заполните поле {attribute}'),
-			array('email, phone', 'unique', 'on' => self::SIGNUP, 'message' => 'Такой {attribute} уже зарегистрирован'),
+			array('email, password', 'required', 'on' => self::LOGIN, 'message' => t('Fill {attribute}')),
+			array('email, phone', 'unique', 'on' => self::SIGNUP, 'message' => t('This {attribute} is already registered')),
 			array(
 				'email, password',
 				'length',
 				'max' => 255,
 				'on' => self::SIGNUP,
-				'message' => 'Максимальная длина {attribute} 255 символов'
+				'message' => t('Max length of {attribute} is 255')
 			),
 			array(
 				'phone',
 				'length',
 				'max' => 20,
 				'on' => self::SIGNUP,
-				'message' => '{attribute} должен состоять не более 20 цифр'
+				'message' => t('{attribute} should be max 20 digits')
 			),
 			array(
 				'password',
 				'compare',
 				'compareAttribute' => 'passwordRepeat',
 				'on' => self::SIGNUP,
-				'message' => 'Пароли не совпадают'
+				'message' => t('Passwords does not match')
 			),
 			array('id, email, phone, password, first_name, last_name, second_name, country, city, vkontakte, facebook, twitter, google, instagram, languages, skills, birth_date, nickname', 'safe'),
 			array(
@@ -80,7 +80,7 @@ class User extends CActiveRecord
 				'filter',
 				'filter' => 'mb_strtolower',
 				'on' => self::SIGNUP,
-				'message' => '{attribute} должен быть записан маленькими буквами'
+				'message' => t('{attribute} should be in lower case')
 			),
 			array('email', 'email', 'on' => self::SIGNUP),
 		);
@@ -145,6 +145,7 @@ class User extends CActiveRecord
 		if (parent::beforeSave()) {
 			if ($this->isNewRecord) {
 				$this->registered = date('Y-m-d H:i:s');
+                $this->hash = self::hashPassword(time());
 				$this->password = self::hashPassword($this->password);
 			}
 

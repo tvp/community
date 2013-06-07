@@ -50,4 +50,13 @@ return array(
     'What would you like to see in The Venus Project?' => 'Что бы Вы хотели увидеть в Проекте Венера?',
     'What project within The Venus Project would you like to take part in?' => 'В каком проекте в рамках Проекта Венера Вы бы хотели принять участие?',
     'What project within The Venus Project would you like to suggest, if any?' => 'Какой проект Вы бы хотели предложить?',
+    'Confirmation code is wrong'=>'Проверочный код не верный',
+    'Your email was successfully confirmed'=>'Ваш Email успешно подтвержден',
+    'Fill {attribute}'=>'Заполните поле {attribute}',
+    'This {attribute} is already registered'=>'Такой {attribute} уже зарегистрирован',
+    'Max length of {attribute} is 255'=>'Максимальная длина {attribute} 255 символов',
+    '{attribute} should be max 20 digits'=>'{attribute} должен состоять не более 20 цифр',
+    'Passwords does not match'=>'Пароли не совпадают',
+    '{attribute} should be in lower case'=>'{attribute} должен быть записан маленькими буквами',
+    '[Community Online] Confirmation' => '[Community Online] Подтверждение регистрации'
 );

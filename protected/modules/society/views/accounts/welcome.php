@@ -3,6 +3,6 @@ $this->breadcrumbs=array(
     t('Registration')
 );
 ?>
-<h1>Добро пожаловать!</h1>
+<h1>Welcome!</h1>
 
-<p>Спасибо за регистрацию. Проверьте свою почту &mdash; мы выслали вам приглашение.</p>
+<p>Thank you for registration. Check your mail &mdash; we sent you an invitation.</p>
