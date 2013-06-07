@@ -11,7 +11,7 @@ class AccountsController extends Controller
 			$user = $form->model;
 			if ($user->save()) {
                 $message = new YiiMailMessage;
-                $message->view = 'confirmation';
+                $message->view = 'confirmation_' . Yii::app()->language;
                 $message->setSubject(t('[Community Online] Confirmation'));
                 $message->setBody(array('user'=>$user), 'text/html');
                 $message->addTo($user->email);
