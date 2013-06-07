@@ -34,3 +34,7 @@ h1 {
 .time {
     font-size: 10px;
 }
+
+.row textarea {
+    width: 100%;
+}

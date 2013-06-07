@@ -28,6 +28,16 @@ $this->breadcrumbs = array(
                         <?php echo CHtml::activeLabel($model, 'second_name'); ?>
                         <?php echo CHtml::activeTextField($model, 'second_name'); ?>
                     </div>
+
+                    <div class="row">
+                        <?php echo CHtml::activeLabel($model, 'nickname'); ?>
+                        <?php echo CHtml::activeTextField($model, 'nickname'); ?>
+                    </div>
+
+                    <div class="row">
+                        <?php echo CHtml::activeLabel($model, 'birth_date'); ?>
+                        <?php echo CHtml::activeTextField($model, 'birth_date'); ?>
+                    </div>
                 </dd>
 
                 <dt><?php echo t('Photo') ?></dt>
@@ -146,12 +156,12 @@ $this->breadcrumbs = array(
                 <dt><?php echo t('Skills') ?></dt>
                 <dd>
                     <div class="row">
-                        <?php echo t('Languages') ?><br>
-                        english, deutsch, русский
+                        <?php echo CHtml::activeLabel($model, 'languages'); ?>
+                        <?php echo CHtml::activeTextArea($model, 'languages', array('rows'=>3)); ?>
                     </div>
                     <div class="row">
-                        <?php echo t('Skills') ?><br>
-                        ...
+                        <?php echo CHtml::activeLabel($model, 'skills'); ?>
+                        <?php echo CHtml::activeTextArea($model, 'skills', array('placeholder'=>t('for example: script writer, translator, interpreter, proof-reader, journalist, lawyer, software engineer, designer'), 'rows'=>5)); ?>
                     </div>
                 </dd>
 
@@ -170,10 +180,30 @@ $this->breadcrumbs = array(
         </div>
 
 		<br class="clear">
+        <dl>
+            <dt><?php echo t('The Venus Project') ?></dt>
+            <dd>
+                <div class="row">
+                    <?php echo CHtml::activeLabel($model, 'tvp_adv'); ?>
+                    <?php echo CHtml::activeTextArea($model, 'tvp_adv', array('rows'=>3)); ?>
+                </div>
+                <div class="row">
+                    <?php echo CHtml::activeLabel($model, 'tvp_goal'); ?>
+                    <?php echo CHtml::activeTextArea($model, 'tvp_goal', array('rows'=>3)); ?>
+                </div>
+                <div class="row">
+                    <?php echo CHtml::activeLabel($model, 'tvp_projects'); ?>
+                    <?php echo CHtml::activeTextArea($model, 'tvp_projects', array('rows'=>3)); ?>
+                </div>
+                <div class="row">
+                    <?php echo CHtml::activeLabel($model, 'tvp_suggest'); ?>
+                    <?php echo CHtml::activeTextArea($model, 'tvp_suggest', array('rows'=>3)); ?>
+                </div>
 
-		<div class="row submit">
-			<?php echo CHtml::submitButton(t('Save'), array('class' => 'btn btn-primary')); ?>
-		</div>
+                <div class="row submit">
+                    <?php echo CHtml::submitButton(t('Save'), array('class' => 'btn btn-primary')); ?>
+                </div>
+        </dd></dl>
 
 		<?php echo CHtml::endForm(); ?>
 	</div><!-- form -->
