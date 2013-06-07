@@ -8,6 +8,13 @@ class DashboardController extends Controller
         if (!$user->confirmed) {
             $user->hash = md5(time());
             $user->save(false);
+            $message = new YiiMailMessage;
+            $message->view = 'confirmation_' . Yii::app()->language;
+            $message->setSubject(t('[Community Online] Confirmation'));
+            $message->setBody(array('user'=>$user), 'text/html');
+            $message->addTo($user->email);
+            $message->from = Yii::app()->params['adminEmail'];
+            Yii::app()->mail->send($message);
             Yii::app()->user->logout();
             $this->redirect(array('/society/accounts/welcome'));
         }
