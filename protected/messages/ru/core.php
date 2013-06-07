@@ -48,6 +48,6 @@ return array(
     'The Venus Project' => 'Проекте Венера',
     'How did you find out about The Venus Project?' => 'Как Вы узнали о Проекте Венера?',
     'What would you like to see in The Venus Project?' => 'Что бы Вы хотели увидеть в Проекте Венера?',
-    'What project within The Venus Project would you like to take part in?' => 'В каком проекте в рамках Проекта Венера Вы бы хотели принять участие',
+    'What project within The Venus Project would you like to take part in?' => 'В каком проекте в рамках Проекта Венера Вы бы хотели принять участие?',
     'What project within The Venus Project would you like to suggest, if any?' => 'Какой проект Вы бы хотели предложить?',
 );
