@@ -27,7 +27,16 @@ class AccountsController extends Controller
 
 	public function actionWelcome()
 	{
-		$this->render('welcome');
+        $user = User::model()->find('email="aleksey@razbakov.com"');
+
+        $message = new YiiMailMessage;
+        $message->view = 'registrationIntro';
+        $message->setSubject('[Community Online] Подтверждение регистрации');
+        $message->setBody(array('user'=>$user), 'text/html');
+        $message->addTo($user->email);
+        $message->from = Yii::app()->params['adminEmail'];
+        Yii::app()->mail->send($message);
+//        $this->render('welcome');
 	}
 
 	public function actionLogin()

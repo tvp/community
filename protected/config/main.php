@@ -22,7 +22,7 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
-        'application.components.yii-mail.*',
+        'ext.yii-mail.*',
     ),
 
     'modules' => array(
@@ -87,7 +87,7 @@ return array(
             ),
         ),
         'mail' => array(
-            'class' => 'application.components.yii-mail.YiiMail',
+            'class' => 'ext.yii-mail.YiiMail',
             'transportType' => 'php',
             'viewPath' => 'application.views.mail',
             'logging' => true,

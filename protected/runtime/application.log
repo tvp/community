@@ -6104,3 +6104,205 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2013/06/08 01:27:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/login
+---
+2013/06/08 01:27:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 01:27:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/dashboard/index
+---
+2013/06/08 01:27:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 01:44:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/lib/bootstrap/less/mixins.less".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://community.dev/index.php/ru/society/accounts/my
+---
+2013/06/08 01:44:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 01:44:22 [error] [php] require(E:\www\dev\community\protected\extensions\yii-mail/vendors/swiftMailer/classes/Swift.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory (E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php:238)
+Stack trace:
+#0 E:\www\dev\community\framework\base\CModule.php(387): YiiMail->init()
+#1 E:\www\dev\community\framework\base\CModule.php(103): CWebApplication->getComponent()
+#2 E:\www\dev\community\protected\extensions\yii-mail\YiiMailMessage.php(112): CWebApplication->__get()
+#3 E:\www\dev\community\protected\modules\society\controllers\AccountsController.php(32): YiiMailMessage->__construct()
+#4 E:\www\dev\community\framework\web\actions\CInlineAction.php(49): AccountsController->actionWelcome()
+#5 E:\www\dev\community\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 E:\www\dev\community\framework\web\CController.php(286): AccountsController->runAction()
+#7 E:\www\dev\community\framework\web\CController.php(265): AccountsController->runActionWithFilters()
+#8 E:\www\dev\community\framework\web\CWebApplication.php(282): AccountsController->run()
+#9 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 E:\www\dev\community\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ru/society/accounts/welcome
+in E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php (238)
+in E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php (238)
+in E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php (106)
+2013/06/08 01:44:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 01:45:55 [error] [php] require(E:\www\dev\community\protected\extensions/vendors/swiftMailer/classes/Swift.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory (E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php:238)
+Stack trace:
+#0 E:\www\dev\community\framework\base\CModule.php(387): YiiMail->init()
+#1 E:\www\dev\community\framework\base\CModule.php(103): CWebApplication->getComponent()
+#2 E:\www\dev\community\protected\extensions\yii-mail\YiiMailMessage.php(112): CWebApplication->__get()
+#3 E:\www\dev\community\protected\modules\society\controllers\AccountsController.php(32): YiiMailMessage->__construct()
+#4 E:\www\dev\community\framework\web\actions\CInlineAction.php(49): AccountsController->actionWelcome()
+#5 E:\www\dev\community\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 E:\www\dev\community\framework\web\CController.php(286): AccountsController->runAction()
+#7 E:\www\dev\community\framework\web\CController.php(265): AccountsController->runActionWithFilters()
+#8 E:\www\dev\community\framework\web\CWebApplication.php(282): AccountsController->run()
+#9 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 E:\www\dev\community\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ru/society/accounts/welcome
+in E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php (238)
+in E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php (238)
+in E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php (106)
+2013/06/08 01:45:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 01:45:56 [error] [php] require(E:\www\dev\community\protected\extensions/vendors/swiftMailer/classes/Swift.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory (E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php:238)
+Stack trace:
+#0 E:\www\dev\community\framework\base\CModule.php(387): YiiMail->init()
+#1 E:\www\dev\community\framework\base\CModule.php(103): CWebApplication->getComponent()
+#2 E:\www\dev\community\protected\extensions\yii-mail\YiiMailMessage.php(112): CWebApplication->__get()
+#3 E:\www\dev\community\protected\modules\society\controllers\AccountsController.php(32): YiiMailMessage->__construct()
+#4 E:\www\dev\community\framework\web\actions\CInlineAction.php(49): AccountsController->actionWelcome()
+#5 E:\www\dev\community\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 E:\www\dev\community\framework\web\CController.php(286): AccountsController->runAction()
+#7 E:\www\dev\community\framework\web\CController.php(265): AccountsController->runActionWithFilters()
+#8 E:\www\dev\community\framework\web\CWebApplication.php(282): AccountsController->run()
+#9 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 E:\www\dev\community\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ru/society/accounts/welcome
+in E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php (238)
+in E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php (238)
+in E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php (106)
+2013/06/08 01:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 01:45:57 [error] [php] require(E:\www\dev\community\protected\extensions/vendors/swiftMailer/classes/Swift.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory (E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php:238)
+Stack trace:
+#0 E:\www\dev\community\framework\base\CModule.php(387): YiiMail->init()
+#1 E:\www\dev\community\framework\base\CModule.php(103): CWebApplication->getComponent()
+#2 E:\www\dev\community\protected\extensions\yii-mail\YiiMailMessage.php(112): CWebApplication->__get()
+#3 E:\www\dev\community\protected\modules\society\controllers\AccountsController.php(32): YiiMailMessage->__construct()
+#4 E:\www\dev\community\framework\web\actions\CInlineAction.php(49): AccountsController->actionWelcome()
+#5 E:\www\dev\community\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 E:\www\dev\community\framework\web\CController.php(286): AccountsController->runAction()
+#7 E:\www\dev\community\framework\web\CController.php(265): AccountsController->runActionWithFilters()
+#8 E:\www\dev\community\framework\web\CWebApplication.php(282): AccountsController->run()
+#9 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 E:\www\dev\community\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ru/society/accounts/welcome
+in E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php (238)
+in E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php (238)
+in E:\www\dev\community\protected\extensions\yii-mail\YiiMail.php (106)
+2013/06/08 01:45:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 01:46:13 [error] [php] Trying to get property of non-object (E:\www\dev\community\protected\views\mail\registrationIntro.php:1)
+Stack trace:
+#0 E:\www\dev\community\protected\modules\society\controllers\AccountsController.php(35): YiiMailMessage->setBody()
+#1 E:\www\dev\community\framework\web\actions\CInlineAction.php(49): AccountsController->actionWelcome()
+#2 E:\www\dev\community\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\www\dev\community\framework\web\CController.php(286): AccountsController->runAction()
+#4 E:\www\dev\community\framework\web\CController.php(265): AccountsController->runActionWithFilters()
+#5 E:\www\dev\community\framework\web\CWebApplication.php(282): AccountsController->run()
+#6 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 E:\www\dev\community\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/ru/society/accounts/welcome
+in E:\www\dev\community\protected\views\mail\registrationIntro.php (1)
+in E:\www\dev\community\protected\extensions\yii-mail\YiiMailMessage.php (143)
+in E:\www\dev\community\protected\modules\society\controllers\AccountsController.php (35)
+2013/06/08 01:46:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 01:47:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 01:47:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 01:47:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\www\dev\community\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\dev\community\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\www\dev\community\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\www\dev\community\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
