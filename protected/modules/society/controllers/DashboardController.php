@@ -4,6 +4,14 @@ class DashboardController extends Controller
 {
     public function actionIndex()
     {
+        $user = User::model()->findByPk(Yii::app()->user->id);
+        if (!$user->confirmed) {
+            $user->hash = md5(time());
+            $user->save(false);
+            Yii::app()->user->logout();
+            $this->redirect(array('welcome'));
+        }
+
         $groups = Group::model()->findAll();
         $posts = Post::model()->with('group')->with('author')->findAll(array('order'=>'created desc'));
         $this->render('index', compact('groups', 'posts'));

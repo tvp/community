@@ -60,9 +60,14 @@ class AccountsController extends Controller
 			$model = $form->model;
 
 			if ($model->validate()) {
-				if ($model->login()) {
+				if ($model->login() && $model->confirmed) {
 					$this->redirect(array('dashboard/index'));
-				}
+				} else {
+                    $model->hash = md5(time());
+                    $model->save(false);
+                    Yii::app()->user->logout();
+                    $this->redirect(array('welcome'));
+                }
 			}
 		}
 
