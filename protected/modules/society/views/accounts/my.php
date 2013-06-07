@@ -46,7 +46,7 @@ $this->breadcrumbs = array(
                         <?php $this->widget(
                         'bootstrap.widgets.TbButtonGroup',
                         array(
-                            'buttons' => array(
+                            'buttons' => $model->photo?array(
                                 array(
                                     'label' => t('Change photo'),
                                     'icon' => 'picture',
@@ -59,9 +59,18 @@ $this->breadcrumbs = array(
                                     'items' => array(
                                         array(
                                             'label' => t('Remove photo'),
-                                            'url' => array('/society/accounts/removePhoto')
+                                            'url' => array('/society/accounts/removePhoto'),
                                         ),
                                     )
+                                ),
+                            ):array(
+                                array(
+                                    'label' => t('Upload a Photo'),
+                                    'icon' => 'picture',
+                                    'htmlOptions' => array(
+                                        'data-toggle' => 'modal',
+                                        'data-target' => '#uploadPhoto',
+                                    ),
                                 ),
                             ),
                         )
