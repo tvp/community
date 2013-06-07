@@ -32,7 +32,7 @@ class AccountsController extends Controller
 
     public function actionConfirm($hash)
     {
-        $user = User::model()->find('hash='.$hash);
+        $user = User::model()->find("hash='$hash'");
         if($user) {
             $user->hash = '';
             $user->confirmed = 1;
