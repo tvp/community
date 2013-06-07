@@ -26,8 +26,7 @@ $this->pageTitle=Yii::app()->name;
 
     <h3>Поддержка</h3>
     <p>Возникли вопросы или предложения?</p>
-    <p>Связаться с автором <a href="mailto:aleksey@razbakov.com">aleksey@razbakov.com</a></p>
-
+    <p>Добавляйте идеи в <a href="https://github.com/tvp/community/issues">наш список задач</a>.</p>
 
 </aside>
 
