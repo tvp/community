@@ -13,7 +13,7 @@ return array(
     'theme' => 'community',
 
     'sourceLanguage' => 'en',
-    'language' => 'ru',
+    'language' => 'en',
 
     // preloading 'log' component
     'preload' => array('log'),
