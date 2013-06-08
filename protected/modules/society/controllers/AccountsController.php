@@ -45,9 +45,9 @@ class AccountsController extends Controller
             } else {
                 Yii::app()->user->setFlash('error', t("Wrong email"));
             }
-        } else {
-            $this->render('forgotPassword', array('form' => $form));
         }
+
+        $this->render('forgotPassword', array('form' => $form));
     }
 
     public function actionConfirm($hash)
