@@ -8,7 +8,7 @@ return array(
 		),
 	),
 	'buttons' => array(
-		'login' => array(
+		'password' => array(
 			'type' => 'submit',
 			'label' => t('Recover Password'),
 			'class' => 'btn btn-primary btn-large'
