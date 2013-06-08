@@ -22,7 +22,7 @@ $this->pageTitle=Yii::app()->name;
 
     <h3>Участникам</h3>
     <p>Уже есть аккаунт?</p>
-    <p><a class="btn" href="<?php echo $this->createUrl('/society/accounts/login') ?>">Вход</a></p>
+    <p><a class="btn" href="<?php echo $this->createUrl('/society/accounts/login') ?>">Вход</a> <?php echo CHtml::link('Забыли пароль?', array('society/accounts/forgotPassword')) ?></p>
 
     <h3>Поддержка</h3>
     <p>Возникли вопросы или предложения?</p>

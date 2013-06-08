@@ -58,5 +58,9 @@ return array(
     '{attribute} should be max 20 digits'=>'{attribute} должен состоять не более 20 цифр',
     'Passwords does not match'=>'Пароли не совпадают',
     '{attribute} should be in lower case'=>'{attribute} должен быть записан маленькими буквами',
-    '[Community Online] Confirmation' => '[Community Online] Подтверждение регистрации'
+    '[Community Online] Confirmation' => '[Community Online] Подтверждение регистрации',
+    'Password Recovery' => 'Восстановление пароля',
+    'Please, enter your email' => 'Пожалуйста, введите свою почту',
+    'Recover Password' => 'Восстановить пароль',
+    '[Community Online] Password Recovery' => '[Community Online] Восстановление пароля'
 );

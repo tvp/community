@@ -23,6 +23,26 @@ class AccountsController extends Controller
         $this->render('welcome');
 	}
 
+    public function actionForgotPassword()
+    {
+        $model = new User;
+        $form = new CForm('application.modules.society.forms.password', $model);
+        $this->render('forgotPassword', array('form' => $form));
+        if ($form->submitted('password')) {
+            $user = User::model()->findByAttributes(array('email'=>$_POST['User']['email']));
+            $password = time();
+            $user->password = User::hashPassword($password);
+            $user->save(false);
+            $message = new YiiMailMessage;
+            $message->view = 'password_' . Yii::app()->language;
+            $message->setSubject(t('[Community Online] Password Recovery'));
+            $message->setBody(array('user'=>$user, 'password'=>$password), 'text/html');
+            $message->addTo($user->email);
+            $message->from = Yii::app()->params['adminEmail'];
+            Yii::app()->mail->send($message);
+        }
+    }
+
     public function actionConfirm($hash)
     {
         $user = User::model()->find("hash='$hash'");

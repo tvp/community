@@ -21,7 +21,7 @@ $this->pageTitle=Yii::app()->name;
     <p><a class="btn btn-large btn-primary" href="<?php echo $this->createUrl('/society/accounts/register') ?>">Join Us</a></p>
 
     <h3>Member's login</h3>
-    <p><a class="btn" href="<?php echo $this->createUrl('/society/accounts/login') ?>">Login</a></p>
+    <p><a class="btn" href="<?php echo $this->createUrl('/society/accounts/login') ?>">Login</a> <?php echo CHtml::link('Forgot Password?', array('society/accounts/forgotPassword')) ?></p>
 
     <h3>Contact Us</h3>
     <p>Do you have a question or suggestion?</p>
