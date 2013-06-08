@@ -62,5 +62,6 @@ return array(
     'Password Recovery' => 'Восстановление пароля',
     'Please, enter your email' => 'Пожалуйста, введите свою почту',
     'Recover Password' => 'Восстановить пароль',
-    '[Community Online] Password Recovery' => '[Community Online] Восстановление пароля'
+    '[Community Online] Password Recovery' => '[Community Online] Восстановление пароля',
+    'Check your mail' => 'Проверьте свою почту'
 );

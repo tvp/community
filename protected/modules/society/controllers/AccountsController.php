@@ -27,7 +27,6 @@ class AccountsController extends Controller
     {
         $model = new User;
         $form = new CForm('application.modules.society.forms.password', $model);
-        $this->render('forgotPassword', array('form' => $form));
         if ($form->submitted('password')) {
             $user = User::model()->findByAttributes(array('email'=>$_POST['User']['email']));
             $password = time();
@@ -40,6 +39,10 @@ class AccountsController extends Controller
             $message->addTo($user->email);
             $message->from = Yii::app()->params['adminEmail'];
             Yii::app()->mail->send($message);
+            Yii::app()->user->setFlash('success', t("Check your mail"));
+            $this->redirect(array('/'));
+        } else {
+            $this->render('forgotPassword', array('form' => $form));
         }
     }
 
