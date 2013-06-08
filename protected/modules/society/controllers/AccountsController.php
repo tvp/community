@@ -28,19 +28,23 @@ class AccountsController extends Controller
         $model = new User;
         $form = new CForm('application.modules.society.forms.password', $model);
         if ($form->submitted('password')) {
-            $user = User::model()->findByAttributes(array('email'=>$_POST['User']['email']));
-            $password = time();
-            $user->password = User::hashPassword($password);
-            $user->save(false);
-            $message = new YiiMailMessage;
-            $message->view = 'password_' . Yii::app()->language;
-            $message->setSubject(t('[Community Online] Password Recovery'));
-            $message->setBody(array('user'=>$user, 'password'=>$password), 'text/html');
-            $message->addTo($user->email);
-            $message->from = Yii::app()->params['adminEmail'];
-            Yii::app()->mail->send($message);
-            Yii::app()->user->setFlash('success', t("Check your mail"));
-            $this->redirect(array('/'));
+            $user = User::model()->findByAttributes(array('email'=>strtolower($_POST['User']['email'])));
+            if($user) {
+                $password = time();
+                $user->password = User::hashPassword($password);
+                $user->save(false);
+                $message = new YiiMailMessage;
+                $message->view = 'password_' . Yii::app()->language;
+                $message->setSubject(t('[Community Online] Password Recovery'));
+                $message->setBody(array('user'=>$user, 'password'=>$password), 'text/html');
+                $message->addTo($user->email);
+                $message->from = Yii::app()->params['adminEmail'];
+                Yii::app()->mail->send($message);
+                Yii::app()->user->setFlash('success', t("Check your mail"));
+                $this->redirect(array('/'));
+            } else {
+                Yii::app()->user->setFlash('error', t("Wrong email"));
+            }
         } else {
             $this->render('forgotPassword', array('form' => $form));
         }
