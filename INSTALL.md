@@ -11,14 +11,14 @@ http://downloads.vagrantup.com/tags/v1.2.2
 5. Создать в ней папку application
 
 6. Содержимое файла Vagrantfile заменить на
-
->Vagrant::Config.run do |config|
->  config.vm.box = "community_online"
->  config.vm.box_url = "https://dl-web.dropbox.com/get/community_online"
->  config.vm.network :hostonly, "192.168.33.10"
->  config.vm.share_folder "v-data", "/var/www", "./application"
->end 
-
+<pre>
+Vagrant::Config.run do |config|
+  config.vm.box = "community_online"
+  config.vm.box_url = "https://dl-web.dropbox.com/get/community_online"
+  config.vm.network :hostonly, "192.168.33.10"
+  config.vm.share_folder "v-data", "/var/www", "./application"
+end 
+</pre>
 3. Склонировать в папку application приложение Community Online
 git clone https://github.com/tvp/community.git ./application
 
