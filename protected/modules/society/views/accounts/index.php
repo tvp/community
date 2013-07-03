@@ -11,8 +11,8 @@ $this->breadcrumbs=array(
         <div style="height: 200px;overflow: hidden">
             <img src="<?php echo $user['photo'] ?>" width="200">
         </div>
-        <h4><?php echo $user['first_name'] ?> <?php echo $user['last_name'] ?></h4>
-        <p><?php echo $user['email'] ?></p>
-        <p><?php echo $user['phone'] ?></p>
+        <h4><?php echo CHtml::encode($user['first_name']) ?> <?php echo CHtml::encode($user['last_name']) ?></h4>
+        <p><?php echo CHtml::encode($user['email']) ?></p>
+        <p><?php echo CHtml::encode($user['phone']) ?></p>
     </div>
 <?php endforeach; ?>

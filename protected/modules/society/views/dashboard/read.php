@@ -10,17 +10,17 @@ $this->breadcrumbs=array(
 
         <li class="nav-header"><?php echo t('Groups') ?></li>
         <?php foreach($groups as $iterableGroup): ?>
-        <li><?php echo CHtml::link($iterableGroup['title'], array('read', 'id'=>$iterableGroup['id'])) ?></li>
+        <li><?php echo CHtml::link(CHtml::encode($iterableGroup['title']), array('read', 'id'=>$iterableGroup['id'])) ?></li>
         <?php endforeach; ?>
     </ul>
 </div>
 <div class="span4">
-    <h1><?php echo t('Dashboard') ?> <?php echo $group['title'] ?></h1>
+    <h1><?php echo t('Dashboard') ?> <?php echo CHtml::encode($group['title']) ?></h1>
     <div class="actions">
         <?php echo CHtml::link('<i class="icon icon-bookmark"></i> Subscribe', array('subscribe'), array('class'=>'btn')); ?>
     </div>
     <br>
-    <p><?php echo $group['message'] ?></p>
+    <p><?php echo CHtml::encode($group['message']) ?></p>
 
     <?php echo CHtml::beginForm(); ?>
     <textarea name="message" placeholder="Status message"></textarea>

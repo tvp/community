@@ -7,8 +7,13 @@ class AccountsController extends Controller
 		$model = new User(User::SIGNUP);
 		$form = new CForm('application.modules.society.forms.register', $model);
 		$form->model = $model;
+
 		if ($form->submitted('register') && $form->validate()) {
 			$user = $form->model;
+			$user->first_name = CHtml::encode($user->first_name);
+			$user->last_name = CHtml::encode($user->last_name);
+			$user->email = CHtml::encode($user->email);
+			$user->phone = CHtml::encode($user->phone);
 			if ($user->save()) {
                 $model->confirmEmail();
 				$this->redirect(array('accounts/welcome'));

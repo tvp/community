@@ -10,7 +10,7 @@ $this->breadcrumbs=array(
 
         <li class="nav-header"><?php echo t('Groups') ?></li>
         <?php foreach($groups as $group): ?>
-        <li><?php echo CHtml::link($group['title'], array('read', 'id'=>$group['id'])) ?></li>
+        <li><?php echo CHtml::link(CHtml::encode($group['title']), array('read', 'id'=>$group['id'])) ?></li>
         <?php endforeach; ?>
     </ul>
 </div>

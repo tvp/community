@@ -22,7 +22,7 @@ class DashboardController extends Controller
             $post = new Post();
             $post->user_id = Yii::app()->user->id;
             $post->created = date('Y-m-d H:i:s');
-            $post->message = $_POST['message'];
+            $post->message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
             $post->group_id = $id;
             $post->save(true);
             $this->redirect(array('read', 'id'=>$id));
